@@ -1,0 +1,7 @@
+<map id="Network" name="Network">
+<area shape="rect" id="node2" href="$class_game.html" title="Defines class for the general `game&#39; of the cat and mice. " alt="" coords="213,526,371,706"/>
+<area shape="rect" id="node3" href="$class_mouse.html" title="Defines an class for a playable chasee (i.e. the hunted mouse) " alt="" coords="359,317,440,395"/>
+<area shape="rect" id="node4" href="$class_animal.html" title="Defines an abstract, base class for a playable `thing&#39; on the screen which can move around etc..." alt="" coords="345,5,455,200"/>
+<area shape="rect" id="node5" href="$class_cat.html" title="Defines an class for a playable chaser (i.e. the chasing cat) " alt="" coords="465,317,527,395"/>
+<area shape="rect" id="node6" href="$class_g_u_i.html" title="Provides GUI View for the game to display the game on in a graphics window. " alt="" coords="552,295,683,417"/>
+</map>

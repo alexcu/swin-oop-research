@@ -1,0 +1,123 @@
+\begin{theindex}
+
+  \item {\-\_\-ctn}
+    \subitem {C\-M\-Network}, 15
+  \item {\-\_\-game\-Model}
+    \subitem {C\-M\-Network}, 15
+  \item {\-\_\-name}
+    \subitem {C\-M\-Animal}, 4
+  \item {\-\_\-network\-I\-D}
+    \subitem {C\-M\-Network}, 15
+  \item {\-\_\-position}
+    \subitem {C\-M\-Animal}, 4
+  \item {\-\_\-refresh\-Rate}
+    \subitem {C\-M\-G\-U\-I}, 11
+  \item {\-\_\-refresh\-Timer}
+    \subitem {C\-M\-G\-U\-I}, 11
+  \item {\-\_\-speed}
+    \subitem {C\-M\-Animal}, 4
+
+  \indexspace
+
+  \item {C\-M\-Animal}, 2
+    \subitem {\-\_\-name}, 4
+    \subitem {\-\_\-position}, 4
+    \subitem {\-\_\-speed}, 4
+    \subitem {check\-Off\-Screen}, 4
+    \subitem {init}, 4
+    \subitem {move\-:}, 4
+    \subitem {name}, 4
+    \subitem {position}, 4
+  \item {C\-M\-Cat}, 4
+    \subitem {init}, 6
+  \item {C\-M\-G\-U\-I}, 9
+    \subitem {\-\_\-refresh\-Rate}, 11
+    \subitem {\-\_\-refresh\-Timer}, 11
+    \subitem {draw\-Animal\-:}, 10
+    \subitem {init\-With\-Refresh\-Rate\-:}, 10
+    \subitem {process\-Screen}, 10
+  \item {C\-M\-Game}, 7
+    \subitem {check\-Keys}, 8
+    \subitem {dealloc}, 8
+    \subitem {init\-As\-Client\-Mouse\-Connecting\-To\-:}, 8
+    \subitem {init\-As\-Host\-Cat}, 8
+    \subitem {is\-Valid}, 8
+    \subitem {process\-Game}, 8
+    \subitem {send\-Player\-Update}, 8
+    \subitem {update\-Other\-Player\-To\-X\-:and\-Y\-:}, 8
+  \item {C\-M\-Mouse}, 11
+  \item {C\-M\-Network}, 13
+    \subitem {\-\_\-ctn}, 15
+    \subitem {\-\_\-game\-Model}, 15
+    \subitem {\-\_\-network\-I\-D}, 15
+    \subitem {init\-As\-Client\-With\-I\-P\-Address\-:in\-Game\-:}, 15
+    \subitem {init\-As\-Host\-In\-Game\-:}, 15
+    \subitem {is\-Connected}, 15
+    \subitem {process\-Messages}, 15
+    \subitem {send\-Message\-With\-String\-:}, 15
+  \item {check\-Keys}
+    \subitem {C\-M\-Game}, 8
+  \item {check\-Off\-Screen}
+    \subitem {C\-M\-Animal}, 4
+
+  \indexspace
+
+  \item {dealloc}
+    \subitem {C\-M\-Game}, 8
+  \item {draw\-Animal\-:}
+    \subitem {C\-M\-G\-U\-I}, 10
+
+  \indexspace
+
+  \item {init}
+    \subitem {C\-M\-Animal}, 4
+    \subitem {C\-M\-Cat}, 6
+  \item {init\-As\-Client\-Mouse\-Connecting\-To\-:}
+    \subitem {C\-M\-Game}, 8
+  \item {init\-As\-Client\-With\-I\-P\-Address\-:in\-Game\-:}
+    \subitem {C\-M\-Network}, 15
+  \item {init\-As\-Host\-Cat}
+    \subitem {C\-M\-Game}, 8
+  \item {init\-As\-Host\-In\-Game\-:}
+    \subitem {C\-M\-Network}, 15
+  \item {init\-With\-Refresh\-Rate\-:}
+    \subitem {C\-M\-G\-U\-I}, 10
+  \item {is\-Connected}
+    \subitem {C\-M\-Network}, 15
+  \item {is\-Valid}
+    \subitem {C\-M\-Game}, 8
+
+  \indexspace
+
+  \item {move\-:}
+    \subitem {C\-M\-Animal}, 4
+
+  \indexspace
+
+  \item {name}
+    \subitem {C\-M\-Animal}, 4
+
+  \indexspace
+
+  \item {position}
+    \subitem {C\-M\-Animal}, 4
+  \item {process\-Game}
+    \subitem {C\-M\-Game}, 8
+  \item {process\-Messages}
+    \subitem {C\-M\-Network}, 15
+  \item {process\-Screen}
+    \subitem {C\-M\-G\-U\-I}, 10
+
+  \indexspace
+
+  \item {send\-Message\-With\-String\-:}
+    \subitem {C\-M\-Network}, 15
+  \item {send\-Player\-Update}
+    \subitem {C\-M\-Game}, 8
+
+  \indexspace
+
+  \item {update\-Other\-Player\-To\-X\-:and\-Y\-:}
+    \subitem {C\-M\-Game}, 8
+
+\end{theindex}

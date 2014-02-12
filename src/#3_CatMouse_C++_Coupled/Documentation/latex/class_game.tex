@@ -1,0 +1,226 @@
+\subsection{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+
+
+{\ttfamily \#include $<$Game.\-h$>$}
+
+
+
+Collaboration diagram for Game\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_game__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Game} ()
+\item 
+{\bf Game} (string ip\-Addr)
+\item 
+{\bf $\sim$\-Game} ()
+\item 
+void {\bf process\-\_\-game} ()
+\item 
+void {\bf update\-\_\-other\-\_\-player} (float x, float y)
+\item 
+bool {\bf is\-\_\-valid} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf send\-\_\-player\-\_\-update} ()
+\item 
+void {\bf check\-\_\-keys} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Animal} $\ast$ {\bf \-\_\-player}
+\item 
+{\bf Animal} $\ast$ {\bf \-\_\-other\-Player}
+\item 
+{\bf Cat} $\ast$ {\bf \-\_\-cat}
+\item 
+{\bf Mouse} $\ast$ {\bf \-\_\-mouse}
+\item 
+timer {\bf \-\_\-game\-Timer}
+\item 
+{\bf Network} $\ast$ {\bf \-\_\-network\-View}
+\item 
+{\bf G\-U\-I} $\ast$ {\bf \-\_\-gui\-View}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Defines class for the general `game' of the cat and mice. 
+
+\begin{DoxyAuthor}{Author}
+Alex Cummaudo 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2 Nov 2013 
+\end{DoxyDate}
+
+
+\subsubsection{Constructor \& Destructor Documentation}
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\paragraph[{Game}]{\setlength{\rightskip}{0pt plus 5cm}Game\-::\-Game (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_game_ad59df6562a58a614fda24622d3715b65}
+
+
+On construction of a game, this overloaded version of the constructor will intitalise the network as a host, and make the player a cat. 
+
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\paragraph[{Game}]{\setlength{\rightskip}{0pt plus 5cm}Game\-::\-Game (
+\begin{DoxyParamCaption}
+\item[{string}]{ip\-Addr}
+\end{DoxyParamCaption}
+)}\label{class_game_a9f041a739620628483875b01760b7829}
+
+
+On construction of a game, this overloaded version of the constructor will intitalise the network as a client, and make the player a mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip\-Addr} & Host to connect to \\
+\hline
+\end{DoxyParams}
+\index{Game@{Game}!$\sim$\-Game@{$\sim$\-Game}}
+\index{$\sim$\-Game@{$\sim$\-Game}!Game@{Game}}
+\paragraph[{$\sim$\-Game}]{\setlength{\rightskip}{0pt plus 5cm}Game\-::$\sim$\-Game (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_game_ae3d112ca6e0e55150d2fdbc704474530}
+
+
+Destructor reliquishes resources created in this class. 
+
+
+
+\subsubsection{Member Function Documentation}
+\index{Game@{Game}!process\-\_\-game@{process\-\_\-game}}
+\index{process\-\_\-game@{process\-\_\-game}!Game@{Game}}
+\paragraph[{process\-\_\-game}]{\setlength{\rightskip}{0pt plus 5cm}void Game\-::process\-\_\-game (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_game_af346e1085033e17a2ced355ca002faf3}
+
+
+Called to process the game. 
+
+\index{Game@{Game}!update\-\_\-other\-\_\-player@{update\-\_\-other\-\_\-player}}
+\index{update\-\_\-other\-\_\-player@{update\-\_\-other\-\_\-player}!Game@{Game}}
+\paragraph[{update\-\_\-other\-\_\-player}]{\setlength{\rightskip}{0pt plus 5cm}void Game\-::update\-\_\-other\-\_\-player (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y}
+\end{DoxyParamCaption}
+)}\label{class_game_ab189beda85f23174032d01e6871c21ae}
+
+
+Updates the other player's position. 
+
+\begin{DoxyNote}{Note}
+This is called from C\-M\-Network 
+\end{DoxyNote}
+\index{Game@{Game}!is\-\_\-valid@{is\-\_\-valid}}
+\index{is\-\_\-valid@{is\-\_\-valid}!Game@{Game}}
+\paragraph[{is\-\_\-valid}]{\setlength{\rightskip}{0pt plus 5cm}bool Game\-::is\-\_\-valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_game_a1e8419b20c25b423e5503f47b4febe84}
+The is valid ensures that the game is still valid, only where it has a network connection (essentially, returns the state of the connection as true/false) \begin{DoxyReturn}{Returns}
+The validity of the game (whether or not is connected) 
+\end{DoxyReturn}
+\index{Game@{Game}!send\-\_\-player\-\_\-update@{send\-\_\-player\-\_\-update}}
+\index{send\-\_\-player\-\_\-update@{send\-\_\-player\-\_\-update}!Game@{Game}}
+\paragraph[{send\-\_\-player\-\_\-update}]{\setlength{\rightskip}{0pt plus 5cm}void Game\-::send\-\_\-player\-\_\-update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_game_a2e88196dcc084f96713b4122f29afa65}
+
+
+Sends a message over the network to update the current player's position. 
+
+\index{Game@{Game}!check\-\_\-keys@{check\-\_\-keys}}
+\index{check\-\_\-keys@{check\-\_\-keys}!Game@{Game}}
+\paragraph[{check\-\_\-keys}]{\setlength{\rightskip}{0pt plus 5cm}void Game\-::check\-\_\-keys (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_game_ac157fe4de75c81839c059423c8899b6c}
+
+
+Method called to update the players position and send it to the remote model. 
+
+
+
+\subsubsection{Member Data Documentation}
+\index{Game@{Game}!\-\_\-player@{\-\_\-player}}
+\index{\-\_\-player@{\-\_\-player}!Game@{Game}}
+\paragraph[{\-\_\-player}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Animal}$\ast$ Game\-::\-\_\-player\hspace{0.3cm}{\ttfamily [private]}}\label{class_game_a33cf560b060565842b8127a9867d64d5}
+
+
+Player of the game (person controlling the game) 
+
+\index{Game@{Game}!\-\_\-other\-Player@{\-\_\-other\-Player}}
+\index{\-\_\-other\-Player@{\-\_\-other\-Player}!Game@{Game}}
+\paragraph[{\-\_\-other\-Player}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Animal}$\ast$ Game\-::\-\_\-other\-Player\hspace{0.3cm}{\ttfamily [private]}}\label{class_game_a5131619bab9ae76ee9289d2fdcd9a14c}
+
+
+Other player in the game (other person controlling enemy) 
+
+\index{Game@{Game}!\-\_\-cat@{\-\_\-cat}}
+\index{\-\_\-cat@{\-\_\-cat}!Game@{Game}}
+\paragraph[{\-\_\-cat}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cat}$\ast$ Game\-::\-\_\-cat\hspace{0.3cm}{\ttfamily [private]}}\label{class_game_a433c454efcf31e54d98a2aa81d4f6801}
+
+
+\doxyref{Cat}{p.}{class_cat} (chaser) of the game. 
+
+\index{Game@{Game}!\-\_\-mouse@{\-\_\-mouse}}
+\index{\-\_\-mouse@{\-\_\-mouse}!Game@{Game}}
+\paragraph[{\-\_\-mouse}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mouse}$\ast$ Game\-::\-\_\-mouse\hspace{0.3cm}{\ttfamily [private]}}\label{class_game_a8e51ead264380e60e29db6bf1d239f36}
+
+
+\doxyref{Mouse}{p.}{class_mouse} (chasee) of the game. 
+
+\index{Game@{Game}!\-\_\-game\-Timer@{\-\_\-game\-Timer}}
+\index{\-\_\-game\-Timer@{\-\_\-game\-Timer}!Game@{Game}}
+\paragraph[{\-\_\-game\-Timer}]{\setlength{\rightskip}{0pt plus 5cm}timer Game\-::\-\_\-game\-Timer\hspace{0.3cm}{\ttfamily [private]}}\label{class_game_a1e8cb33307304fe85e3efaa7d27132c0}
+
+
+Ingame-\/timer to keep track of how long game has gone for. 
+
+\index{Game@{Game}!\-\_\-network\-View@{\-\_\-network\-View}}
+\index{\-\_\-network\-View@{\-\_\-network\-View}!Game@{Game}}
+\paragraph[{\-\_\-network\-View}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Network}$\ast$ Game\-::\-\_\-network\-View\hspace{0.3cm}{\ttfamily [private]}}\label{class_game_a3428896be21a0397920b1f5bc2810524}
+
+
+Couple the network view to the game model. 
+
+\index{Game@{Game}!\-\_\-gui\-View@{\-\_\-gui\-View}}
+\index{\-\_\-gui\-View@{\-\_\-gui\-View}!Game@{Game}}
+\paragraph[{\-\_\-gui\-View}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-U\-I}$\ast$ Game\-::\-\_\-gui\-View\hspace{0.3cm}{\ttfamily [private]}}\label{class_game_a2997a18a99e579ce72b65aec75d07f04}
+
+
+Couple the \doxyref{G\-U\-I}{p.}{class_g_u_i} view to the game model only for H\-U\-D. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/\-Alex/\-Dropbox/\-Swinburne/\-H\-I\-T2302 -\/ O\-O\-P/\-Projects/\-Cat and Mouse/\#3\-\_\-\-Cat\-Mouse\-\_\-\-C++\-\_\-\-Coupled/src/{\bf Game.\-h}\item 
+/\-Users/\-Alex/\-Dropbox/\-Swinburne/\-H\-I\-T2302 -\/ O\-O\-P/\-Projects/\-Cat and Mouse/\#3\-\_\-\-Cat\-Mouse\-\_\-\-C++\-\_\-\-Coupled/src/{\bf Game.\-cpp}\end{DoxyCompactItemize}

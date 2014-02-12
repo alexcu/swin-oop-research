@@ -1,0 +1,4 @@
+<map id="CMLog" name="CMLog">
+<area shape="rect" id="node3" href="$protocol_c_m_event_processor-p.html" title="A protocol class that defines all the methods that each processor of events must implement. " alt="" coords="108,256,255,333"/>
+<area shape="rect" id="node4" href="$protocol_c_m_event_subscriber-p.html" title="Acts as a parent to subscribers and announcers so that the Event manager knows what to manager (i..." alt="" coords="106,131,256,208"/>
+</map>

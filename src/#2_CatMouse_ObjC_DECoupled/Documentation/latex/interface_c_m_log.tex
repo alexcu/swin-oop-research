@@ -1,0 +1,97 @@
+\subsection{C\-M\-Log Class Reference}
+\label{interface_c_m_log}\index{C\-M\-Log@{C\-M\-Log}}
+
+
+{\ttfamily \#import $<$C\-M\-Log.\-h$>$}
+
+
+
+Inheritance diagram for C\-M\-Log\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{interface_c_m_log__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\-M\-Log\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{interface_c_m_log__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ {\bf init}{\ttfamily  [implementation]}
+\item 
+(void) -\/ {\bf dealloc}{\ttfamily  [implementation]}
+\item 
+(void) -\/ {\bf process\-Event\-:}{\ttfamily  [implementation]}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+C\-L\-I view to game. 
+
+\begin{DoxyAuthor}{Author}
+Alex Cummaudo 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+22 Oct 2013 
+\end{DoxyDate}
+
+
+\subsubsection{Method Documentation}
+\index{C\-M\-Log@{C\-M\-Log}!init@{init}}
+\index{init@{init}!CMLog@{C\-M\-Log}}
+\paragraph[{init}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [implementation]}}\label{interface_c_m_log_a868ffae3935c19d4b769687142ec0c18}
+
+
+Constructor asks \doxyref{C\-M\-Event\-Manager}{p.}{interface_c_m_event_manager} to start handling me. 
+
+\index{C\-M\-Log@{C\-M\-Log}!dealloc@{dealloc}}
+\index{dealloc@{dealloc}!CMLog@{C\-M\-Log}}
+\paragraph[{dealloc}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) dealloc 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [implementation]}}\label{interface_c_m_log_a38cb7081f4d1f8ccb674d1f58be41bec}
+
+
+Destructor asks \doxyref{C\-M\-Event\-Manager}{p.}{interface_c_m_event_manager} to forget about me. 
+
+\index{C\-M\-Log@{C\-M\-Log}!process\-Event\-:@{process\-Event\-:}}
+\index{process\-Event\-:@{process\-Event\-:}!CMLog@{C\-M\-Log}}
+\paragraph[{process\-Event\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) process\-Event\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-M\-Event} $\ast$)}]{e\-Data}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [implementation]}}\label{interface_c_m_log_aa1de3f727ca8f9347615eb10fa4d43c6}
+
+
+Processes a data depending on the the data passed by printing each key/value pair in the event data's dictionary. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e\-Data} & Event Data to process \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from {\bf $<$\-C\-M\-Event\-Processor$>$} \doxyref{}{p.}{protocol_c_m_event_processor-p_a2c1a51a02e850b72f7294766f20702f2}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/\-Alex/\-Dropbox/\-Swinburne/\-H\-I\-T2302 -\/ O\-O\-P/\-Projects/\-Cat and Mouse/\#2\-\_\-\-Cat\-Mouse\-\_\-\-Obj\-C\-\_\-\-D\-E\-Coupled/src/{\bf C\-M\-Log.\-h}\item 
+/\-Users/\-Alex/\-Dropbox/\-Swinburne/\-H\-I\-T2302 -\/ O\-O\-P/\-Projects/\-Cat and Mouse/\#2\-\_\-\-Cat\-Mouse\-\_\-\-Obj\-C\-\_\-\-D\-E\-Coupled/src/{\bf C\-M\-Log.\-m}\end{DoxyCompactItemize}

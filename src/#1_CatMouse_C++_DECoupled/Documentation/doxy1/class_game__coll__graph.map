@@ -1,0 +1,8 @@
+<map id="Game" name="Game">
+<area shape="rect" id="node2" href="$class_event_processor.html" title="An pure abstract class that defines all the methods that each processor of events must implement..." alt="" coords="5,251,131,328"/>
+<area shape="rect" id="node3" href="$class_event_subscriber.html" title="Acts as a parent to subscribers and announcers so that the Event manager knows what to manager (i..." alt="" coords="59,57,201,149"/>
+<area shape="rect" id="node4" href="$class_event_announcer.html" title="An pure abstract class that defines all the methods that each announcer of events must implement..." alt="" coords="155,251,287,328"/>
+<area shape="rect" id="node5" href="$class_mouse.html" title="Defines an class for a playable chasee (i.e. the hunted mouse) " alt="" coords="439,251,520,328"/>
+<area shape="rect" id="node6" href="$class_animal.html" title="Defines an abstract, base class for a playable `thing&#39; on the screen which can move around etc..." alt="" coords="425,5,535,200"/>
+<area shape="rect" id="node7" href="$class_cat.html" title="Defines an class for a playable chaser (i.e. the chasing cat) " alt="" coords="545,251,607,328"/>
+</map>

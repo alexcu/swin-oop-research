@@ -1,0 +1,120 @@
+\subsection{G\-U\-I Class Reference}
+\label{class_g_u_i}\index{G\-U\-I@{G\-U\-I}}
+
+
+{\ttfamily \#include $<$G\-U\-I.\-h$>$}
+
+
+
+Inheritance diagram for G\-U\-I\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{class_g_u_i__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for G\-U\-I\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{class_g_u_i__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf G\-U\-I} (float ref\-Rate)
+\item 
+virtual void {\bf process\-\_\-event} ({\bf Event} $\ast$e\-Data)
+\item 
+void {\bf process\-\_\-screen} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+timer {\bf \-\_\-refresh\-Timer}
+\item 
+float {\bf \-\_\-refresh\-Rate}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Provides \doxyref{G\-U\-I}{p.}{class_g_u_i} View for the game to display the game on in a graphics window. 
+
+\begin{DoxyAuthor}{Author}
+Alex Cummaudo 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+19 Oct 2013 
+\end{DoxyDate}
+
+
+\subsubsection{Constructor \& Destructor Documentation}
+\index{G\-U\-I@{G\-U\-I}!G\-U\-I@{G\-U\-I}}
+\index{G\-U\-I@{G\-U\-I}!GUI@{G\-U\-I}}
+\paragraph[{G\-U\-I}]{\setlength{\rightskip}{0pt plus 5cm}G\-U\-I\-::\-G\-U\-I (
+\begin{DoxyParamCaption}
+\item[{float}]{ref\-Rate}
+\end{DoxyParamCaption}
+)}\label{class_g_u_i_a371321c2223659573ebd5b693ea839a8}
+
+
+Constructor for \doxyref{G\-U\-I}{p.}{class_g_u_i} view creates a graphics window for Swin\-Game. 
+
+
+
+\subsubsection{Member Function Documentation}
+\index{G\-U\-I@{G\-U\-I}!process\-\_\-event@{process\-\_\-event}}
+\index{process\-\_\-event@{process\-\_\-event}!GUI@{G\-U\-I}}
+\paragraph[{process\-\_\-event}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-::process\-\_\-event (
+\begin{DoxyParamCaption}
+\item[{{\bf Event} $\ast$}]{e\-Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_g_u_i_a1d1b90dd1d77ccc97ce2861359767a20}
+
+
+Processes events by drawing only \doxyref{Game}{p.}{class_game} events onto the screen given the \doxyref{Game}{p.}{class_game} event is about an \doxyref{Animal}{p.}{class_animal}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e\-Data} & \doxyref{Event}{p.}{class_event} Data to process \\
+\hline
+\end{DoxyParams}
+
+
+Implements {\bf Event\-Processor} \doxyref{}{p.}{class_event_processor_a20ce019a16fcf8ba67b6547750bf6655}.
+
+\index{G\-U\-I@{G\-U\-I}!process\-\_\-screen@{process\-\_\-screen}}
+\index{process\-\_\-screen@{process\-\_\-screen}!GUI@{G\-U\-I}}
+\paragraph[{process\-\_\-screen}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-::process\-\_\-screen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_g_u_i_abb478359b6d62cabce2839c950afbf68}
+
+
+Clears and refreshes the screen by the time given in reset timer. 
+
+
+
+\subsubsection{Member Data Documentation}
+\index{G\-U\-I@{G\-U\-I}!\-\_\-refresh\-Timer@{\-\_\-refresh\-Timer}}
+\index{\-\_\-refresh\-Timer@{\-\_\-refresh\-Timer}!GUI@{G\-U\-I}}
+\paragraph[{\-\_\-refresh\-Timer}]{\setlength{\rightskip}{0pt plus 5cm}timer G\-U\-I\-::\-\_\-refresh\-Timer\hspace{0.3cm}{\ttfamily [private]}}\label{class_g_u_i_a10617cc2306e5318fa1d89cef9ee208b}
+Timer used to refresh the screen at the by clearing the screen and resetting at refresh\-Rate given \index{G\-U\-I@{G\-U\-I}!\-\_\-refresh\-Rate@{\-\_\-refresh\-Rate}}
+\index{\-\_\-refresh\-Rate@{\-\_\-refresh\-Rate}!GUI@{G\-U\-I}}
+\paragraph[{\-\_\-refresh\-Rate}]{\setlength{\rightskip}{0pt plus 5cm}float G\-U\-I\-::\-\_\-refresh\-Rate\hspace{0.3cm}{\ttfamily [private]}}\label{class_g_u_i_a4d1f915c03268ce7c9e2896ec82aa83e}
+
+
+Seconds to refresh the screen at. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/\-Alex/\-Dropbox/\-Swinburne/\-H\-I\-T2302 -\/ O\-O\-P/\-Projects/\-Cat and Mouse/\#1\-\_\-\-Cat\-Mouse\-\_\-\-C++\-\_\-\-D\-E\-Coupled/src/{\bf G\-U\-I.\-h}\item 
+/\-Users/\-Alex/\-Dropbox/\-Swinburne/\-H\-I\-T2302 -\/ O\-O\-P/\-Projects/\-Cat and Mouse/\#1\-\_\-\-Cat\-Mouse\-\_\-\-C++\-\_\-\-D\-E\-Coupled/src/{\bf G\-U\-I.\-cpp}\end{DoxyCompactItemize}

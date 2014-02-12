@@ -1,0 +1,7 @@
+<map id="EventProcessor" name="EventProcessor">
+<area shape="rect" id="node3" href="$class_game.html" title="Defines class for the general `game&#39; of the cat and mice. " alt="" coords="5,294,136,474"/>
+<area shape="rect" id="node4" href="$class_g_u_i.html" title="Provides GUI View for the game to display the game on in a graphics window. " alt="" coords="161,323,292,445"/>
+<area shape="rect" id="node5" href="$class_log.html" title="CLI view to game. " alt="" coords="316,345,441,423"/>
+<area shape="rect" id="node6" href="$class_network.html" title="Packages up data recieved from the controller and passes it to a given network. " alt="" coords="465,272,620,496"/>
+<area shape="rect" id="node2" href="$class_event_subscriber.html" title="Acts as a parent to subscribers and announcers so that the Event manager knows what to manager (i..." alt="" coords="231,6,373,98"/>
+</map>

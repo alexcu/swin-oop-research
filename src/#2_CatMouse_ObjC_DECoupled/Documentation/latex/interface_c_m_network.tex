@@ -1,0 +1,269 @@
+\subsection{C\-M\-Network Class Reference}
+\label{interface_c_m_network}\index{C\-M\-Network@{C\-M\-Network}}
+
+
+{\ttfamily \#import $<$C\-M\-Network.\-h$>$}
+
+
+
+Inheritance diagram for C\-M\-Network\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interface_c_m_network__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\-M\-Network\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interface_c_m_network__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ {\bf init\-As\-Host}
+\item 
+(id) -\/ {\bf init\-As\-Client\-With\-I\-P\-Address\-:}
+\item 
+(void) -\/ {\bf process\-Messages}
+\item 
+(void) -\/ {\bf dealloc}{\ttfamily  [implementation]}
+\item 
+(void) -\/ {\bf timeout\-With\-Prompt\-:success\-Message\-:failure\-Message\-:timeout\-Seconds\-:countdown\-Body\-Function\-:break\-Condition\-:}{\ttfamily  [implementation]}
+\item 
+(S\-G\-Connection $\ast$) -\/ {\bf new\-Connection\-As\-Host}{\ttfamily  [implementation]}
+\item 
+(S\-G\-Connection $\ast$) -\/ {\bf new\-Connection\-As\-Client\-With\-I\-P\-Address\-:}{\ttfamily  [implementation]}
+\item 
+(void) -\/ {\bf process\-Event\-:}{\ttfamily  [implementation]}
+\item 
+(void) -\/ {\bf announce\-Event\-:}{\ttfamily  [implementation]}
+\end{DoxyCompactItemize}
+\subsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+S\-G\-Connection $\ast$ {\bf \-\_\-ctn}
+\item 
+N\-S\-String $\ast$ {\bf \-\_\-network\-I\-D}
+\end{DoxyCompactItemize}
+\subsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+B\-O\-O\-L {\bf is\-Connected}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Packages up data recieved from the controller and passes it to a given network. 
+
+\begin{DoxyAuthor}{Author}
+Alex Cummaudo 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+22 Oct 2013 
+\end{DoxyDate}
+
+
+\subsubsection{Method Documentation}
+\index{C\-M\-Network@{C\-M\-Network}!init\-As\-Host@{init\-As\-Host}}
+\index{init\-As\-Host@{init\-As\-Host}!CMNetwork@{C\-M\-Network}}
+\paragraph[{init\-As\-Host}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-As\-Host 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_c_m_network_a320a963e841e1a0114ed9c34e3453420}
+
+
+Constructor initiates a connection as a host. 
+
+\begin{DoxyReturn}{Returns}
+The self class pointer 
+\end{DoxyReturn}
+\index{C\-M\-Network@{C\-M\-Network}!init\-As\-Client\-With\-I\-P\-Address\-:@{init\-As\-Client\-With\-I\-P\-Address\-:}}
+\index{init\-As\-Client\-With\-I\-P\-Address\-:@{init\-As\-Client\-With\-I\-P\-Address\-:}!CMNetwork@{C\-M\-Network}}
+\paragraph[{init\-As\-Client\-With\-I\-P\-Address\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-As\-Client\-With\-I\-P\-Address\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{ip\-Addr}
+\end{DoxyParamCaption}
+}\label{interface_c_m_network_a5da4d088fbf6d0b1ab39179ad85a81b4}
+
+
+Constructor initiates a connection to a given ip address (as a client) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip\-Addr} & The I\-P Address of the host this client will connect to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The self class pointer 
+\end{DoxyReturn}
+\index{C\-M\-Network@{C\-M\-Network}!process\-Messages@{process\-Messages}}
+\index{process\-Messages@{process\-Messages}!CMNetwork@{C\-M\-Network}}
+\paragraph[{process\-Messages}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) process\-Messages 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_c_m_network_aa08f5e2e1b9dbcfd21c21d3f1bb0a17a}
+
+
+Process messages that are being recieved (i.\-e. incoming network string to event) 
+
+\begin{DoxyNote}{Note}
+Messages recieved in the format\-: key\-:value,key\-:value, etc. Hence we want to parse the msg back into its event kind
+\end{DoxyNote}
+\index{C\-M\-Network@{C\-M\-Network}!dealloc@{dealloc}}
+\index{dealloc@{dealloc}!CMNetwork@{C\-M\-Network}}
+\paragraph[{dealloc}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) dealloc 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [implementation]}}\label{interface_c_m_network_a20b0186561b122121f42d88f96ecc7c3}
+
+
+Destructor sends goodbye message and asks \doxyref{C\-M\-Event\-Manager}{p.}{interface_c_m_event_manager} to forget about me and closes all connections. 
+
+\index{C\-M\-Network@{C\-M\-Network}!timeout\-With\-Prompt\-:success\-Message\-:failure\-Message\-:timeout\-Seconds\-:countdown\-Body\-Function\-:break\-Condition\-:@{timeout\-With\-Prompt\-:success\-Message\-:failure\-Message\-:timeout\-Seconds\-:countdown\-Body\-Function\-:break\-Condition\-:}}
+\index{timeout\-With\-Prompt\-:success\-Message\-:failure\-Message\-:timeout\-Seconds\-:countdown\-Body\-Function\-:break\-Condition\-:@{timeout\-With\-Prompt\-:success\-Message\-:failure\-Message\-:timeout\-Seconds\-:countdown\-Body\-Function\-:break\-Condition\-:}!CMNetwork@{C\-M\-Network}}
+\paragraph[{timeout\-With\-Prompt\-:success\-Message\-:failure\-Message\-:timeout\-Seconds\-:countdown\-Body\-Function\-:break\-Condition\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) timeout\-With\-Prompt\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{msg\-Prompt}
+\item[{successMessage:(N\-S\-String$\ast$)}]{msg\-Suc}
+\item[{failureMessage:(N\-S\-String$\ast$)}]{msg\-Fail}
+\item[{timeoutSeconds:(int)}]{timeout\-Secs}
+\item[{countdownBodyFunction:(void ($^\wedge$)}]{countdown\-Body}
+\item[{breakCondition:(B\-O\-O\-L ($^\wedge$)}]{break\-Condition}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [implementation]}}\label{interface_c_m_network_a4ada0136c4d624c549abb7593376f5f9}
+
+
+The timeout connection; runs the passed function success on a success, and error function on error; allow passing of two block objects can be passed in as parameters to the timeout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg\-Prompt} & Prompt message announced when timeout begins (i.\-e., why we're having a timeout). \\
+\hline
+{\em msg\-Succ} & Message announced when timeout did not run out and the break condition was met \\
+\hline
+{\em msg\-Fail} & Message announced when timeout did ran out of timeout\-Secs and the break condition was never met \\
+\hline
+{\em timeout\-Secs} & How long to run timeout for \\
+\hline
+{\em countdown\-Body} & Function to run every second on timeout \\
+\hline
+{\em break\-Condition} & Function that returns a bool to check whether or not the timeout should break \\
+\hline
+\end{DoxyParams}
+\index{C\-M\-Network@{C\-M\-Network}!new\-Connection\-As\-Host@{new\-Connection\-As\-Host}}
+\index{new\-Connection\-As\-Host@{new\-Connection\-As\-Host}!CMNetwork@{C\-M\-Network}}
+\paragraph[{new\-Connection\-As\-Host}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (S\-G\-Connection $\ast$) new\-Connection\-As\-Host 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [implementation]}}\label{interface_c_m_network_a70ea6defc2f20045523b267c109a71b2}
+
+
+Initiates the connection as a host, returning true or false on a success or error. 
+
+\begin{DoxyReturn}{Returns}
+A new host connection to work with 
+\end{DoxyReturn}
+Define new\-Connection as \-\_\-\-\_\-block to allow access to the
+
+Force break condition to be true \index{C\-M\-Network@{C\-M\-Network}!new\-Connection\-As\-Client\-With\-I\-P\-Address\-:@{new\-Connection\-As\-Client\-With\-I\-P\-Address\-:}}
+\index{new\-Connection\-As\-Client\-With\-I\-P\-Address\-:@{new\-Connection\-As\-Client\-With\-I\-P\-Address\-:}!CMNetwork@{C\-M\-Network}}
+\paragraph[{new\-Connection\-As\-Client\-With\-I\-P\-Address\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (S\-G\-Connection $\ast$) new\-Connection\-As\-Client\-With\-I\-P\-Address\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{ip\-Addr}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [implementation]}}\label{interface_c_m_network_ad32e2a1d2b2f2c749d4d63cc6627d006}
+
+
+Initiates the connection as a client, returning true or false on a success or error. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip\-Addr} & I\-P Address that this client should connect to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new client connection to work with 
+\end{DoxyReturn}
+Force break condition to be true \index{C\-M\-Network@{C\-M\-Network}!process\-Event\-:@{process\-Event\-:}}
+\index{process\-Event\-:@{process\-Event\-:}!CMNetwork@{C\-M\-Network}}
+\paragraph[{process\-Event\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) process\-Event\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-M\-Event} $\ast$)}]{e\-Data}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [implementation]}}\label{interface_c_m_network_a79182ec07c3411943efe92aba5fc7586}
+
+
+Process the event data by packaging it and sending it over the network as a string (i.\-e. an outgoing event to a network string) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e\-Data} & Event Data to process \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from {\bf $<$\-C\-M\-Event\-Processor$>$} \doxyref{}{p.}{protocol_c_m_event_processor-p_a2c1a51a02e850b72f7294766f20702f2}.
+
+\index{C\-M\-Network@{C\-M\-Network}!announce\-Event\-:@{announce\-Event\-:}}
+\index{announce\-Event\-:@{announce\-Event\-:}!CMNetwork@{C\-M\-Network}}
+\paragraph[{announce\-Event\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) announce\-Event\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{message}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [implementation]}}\label{interface_c_m_network_a10a4c149d59fbfd09dc59a2603b8cf90}
+
+
+Sends an event to all subscribers with the given message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Message to announce when creating an Event \\
+\hline
+\end{DoxyParams}
+
+
+\subsubsection{Member Data Documentation}
+\index{C\-M\-Network@{C\-M\-Network}!\-\_\-ctn@{\-\_\-ctn}}
+\index{\-\_\-ctn@{\-\_\-ctn}!CMNetwork@{C\-M\-Network}}
+\paragraph[{\-\_\-ctn}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (S\-G\-Connection$\ast$) \-\_\-ctn\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_c_m_network_a0a264da400cb4d9bb8c16cbc66a8908a}
+
+
+Network connection controller between client and host. 
+
+\index{C\-M\-Network@{C\-M\-Network}!\-\_\-network\-I\-D@{\-\_\-network\-I\-D}}
+\index{\-\_\-network\-I\-D@{\-\_\-network\-I\-D}!CMNetwork@{C\-M\-Network}}
+\paragraph[{\-\_\-network\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String$\ast$) \-\_\-network\-I\-D\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_c_m_network_a161ebaba32492602e1c445e76a890e89}
+
+
+Defines a unique address of this machine. 
+
+
+
+\subsubsection{Property Documentation}
+\index{C\-M\-Network@{C\-M\-Network}!is\-Connected@{is\-Connected}}
+\index{is\-Connected@{is\-Connected}!CMNetwork@{C\-M\-Network}}
+\paragraph[{is\-Connected}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) is\-Connected\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}\label{interface_c_m_network_a70dba80bb8b16b179d3a79fcc4d62786}
+
+
+Gets connection status. 
+
+\begin{DoxyReturn}{Returns}
+Y\-E\-S on a connection with another machine or N\-O when not 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/\-Alex/\-Dropbox/\-Swinburne/\-H\-I\-T2302 -\/ O\-O\-P/\-Projects/\-Cat and Mouse/\#2\-\_\-\-Cat\-Mouse\-\_\-\-Obj\-C\-\_\-\-D\-E\-Coupled/src/{\bf C\-M\-Network.\-h}\item 
+/\-Users/\-Alex/\-Dropbox/\-Swinburne/\-H\-I\-T2302 -\/ O\-O\-P/\-Projects/\-Cat and Mouse/\#2\-\_\-\-Cat\-Mouse\-\_\-\-Obj\-C\-\_\-\-D\-E\-Coupled/src/{\bf C\-M\-Network.\-m}\end{DoxyCompactItemize}

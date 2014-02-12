@@ -1,0 +1,6 @@
+<map id="EventAnnouncer" name="EventAnnouncer">
+<area shape="rect" id="node3" href="$class_game.html" title="Defines class for the general `game&#39; of the cat and mice. " alt="" coords="5,294,136,474"/>
+<area shape="rect" id="node4" href="$class_keyboard.html" title="Defines class to capture keyboard events and pass them to the processor. " alt="" coords="161,338,308,430"/>
+<area shape="rect" id="node5" href="$class_network.html" title="Packages up data recieved from the controller and passes it to a given network. " alt="" coords="332,272,487,496"/>
+<area shape="rect" id="node2" href="$class_event_subscriber.html" title="Acts as a parent to subscribers and announcers so that the Event manager knows what to manager (i..." alt="" coords="163,6,305,98"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="&lt;CMEventAnnouncer&gt;" name="&lt;CMEventAnnouncer&gt;">
+<area shape="rect" id="node2" href="$interface_c_m_keyboard.html" title="Defines class to capture keyboard events and pass them to the processor. " alt="" coords="5,233,139,311"/>
+<area shape="rect" id="node3" href="$interface_c_m_network.html" title="Packages up data recieved from the controller and passes it to a given network. " alt="" coords="163,131,417,413"/>
+</map>

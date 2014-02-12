@@ -1,0 +1,106 @@
+\contentsline {section}{\numberline {1}C++ Decoupled Implementation}{1}
+\contentsline {section}{\numberline {2}Class Documentation}{1}
+\contentsline {subsection}{\numberline {2.1}Animal Class Reference}{1}
+\contentsline {subsubsection}{\numberline {2.1.1}Detailed Description}{3}
+\contentsline {subsubsection}{\numberline {2.1.2}Constructor \& Destructor Documentation}{3}
+\contentsline {paragraph}{\numberline {2.1.2.1}Animal}{3}
+\contentsline {paragraph}{\numberline {2.1.2.2}$\sim $\discretionary {-}{}{}Animal}{3}
+\contentsline {subsubsection}{\numberline {2.1.3}Member Function Documentation}{3}
+\contentsline {paragraph}{\numberline {2.1.3.1}move}{3}
+\contentsline {paragraph}{\numberline {2.1.3.2}get\discretionary {-}{}{}\_\discretionary {-}{}{}position}{3}
+\contentsline {paragraph}{\numberline {2.1.3.3}set\discretionary {-}{}{}\_\discretionary {-}{}{}position}{4}
+\contentsline {paragraph}{\numberline {2.1.3.4}get\discretionary {-}{}{}\_\discretionary {-}{}{}name}{5}
+\contentsline {paragraph}{\numberline {2.1.3.5}off\discretionary {-}{}{}\_\discretionary {-}{}{}screen}{5}
+\contentsline {subsubsection}{\numberline {2.1.4}Member Data Documentation}{5}
+\contentsline {paragraph}{\numberline {2.1.4.1}\discretionary {-}{}{}\_\discretionary {-}{}{}position}{5}
+\contentsline {paragraph}{\numberline {2.1.4.2}\discretionary {-}{}{}\_\discretionary {-}{}{}speed}{5}
+\contentsline {paragraph}{\numberline {2.1.4.3}\discretionary {-}{}{}\_\discretionary {-}{}{}name}{5}
+\contentsline {subsection}{\numberline {2.2}Cat Class Reference}{5}
+\contentsline {subsubsection}{\numberline {2.2.1}Detailed Description}{7}
+\contentsline {subsubsection}{\numberline {2.2.2}Constructor \& Destructor Documentation}{7}
+\contentsline {paragraph}{\numberline {2.2.2.1}Cat}{7}
+\contentsline {subsection}{\numberline {2.3}Event Class Reference}{8}
+\contentsline {subsubsection}{\numberline {2.3.1}Detailed Description}{8}
+\contentsline {subsubsection}{\numberline {2.3.2}Constructor \& Destructor Documentation}{8}
+\contentsline {paragraph}{\numberline {2.3.2.1}Event}{8}
+\contentsline {subsubsection}{\numberline {2.3.3}Member Function Documentation}{8}
+\contentsline {paragraph}{\numberline {2.3.3.1}get\discretionary {-}{}{}\_\discretionary {-}{}{}data}{8}
+\contentsline {subsubsection}{\numberline {2.3.4}Member Data Documentation}{9}
+\contentsline {paragraph}{\numberline {2.3.4.1}\discretionary {-}{}{}\_\discretionary {-}{}{}data}{9}
+\contentsline {subsection}{\numberline {2.4}Event\discretionary {-}{}{}Announcer Interface Reference}{9}
+\contentsline {subsubsection}{\numberline {2.4.1}Detailed Description}{10}
+\contentsline {subsubsection}{\numberline {2.4.2}Member Function Documentation}{10}
+\contentsline {paragraph}{\numberline {2.4.2.1}announce\discretionary {-}{}{}\_\discretionary {-}{}{}event}{10}
+\contentsline {subsection}{\numberline {2.5}Event\discretionary {-}{}{}Manager Class Reference}{11}
+\contentsline {subsubsection}{\numberline {2.5.1}Detailed Description}{11}
+\contentsline {subsubsection}{\numberline {2.5.2}Constructor \& Destructor Documentation}{12}
+\contentsline {paragraph}{\numberline {2.5.2.1}Event\discretionary {-}{}{}Manager}{12}
+\contentsline {subsubsection}{\numberline {2.5.3}Member Function Documentation}{12}
+\contentsline {paragraph}{\numberline {2.5.3.1}publish\discretionary {-}{}{}\_\discretionary {-}{}{}event}{12}
+\contentsline {paragraph}{\numberline {2.5.3.2}add\discretionary {-}{}{}\_\discretionary {-}{}{}subscriber}{12}
+\contentsline {paragraph}{\numberline {2.5.3.3}forget\discretionary {-}{}{}\_\discretionary {-}{}{}subscriber}{12}
+\contentsline {subsubsection}{\numberline {2.5.4}Member Data Documentation}{12}
+\contentsline {paragraph}{\numberline {2.5.4.1}\discretionary {-}{}{}\_\discretionary {-}{}{}subs}{12}
+\contentsline {subsection}{\numberline {2.6}Event\discretionary {-}{}{}Processor Interface Reference}{12}
+\contentsline {subsubsection}{\numberline {2.6.1}Detailed Description}{14}
+\contentsline {subsubsection}{\numberline {2.6.2}Member Function Documentation}{14}
+\contentsline {paragraph}{\numberline {2.6.2.1}process\discretionary {-}{}{}\_\discretionary {-}{}{}event}{14}
+\contentsline {subsection}{\numberline {2.7}Event\discretionary {-}{}{}Subscriber Interface Reference}{14}
+\contentsline {subsubsection}{\numberline {2.7.1}Detailed Description}{15}
+\contentsline {subsubsection}{\numberline {2.7.2}Constructor \& Destructor Documentation}{15}
+\contentsline {paragraph}{\numberline {2.7.2.1}Event\discretionary {-}{}{}Subscriber}{15}
+\contentsline {paragraph}{\numberline {2.7.2.2}$\sim $\discretionary {-}{}{}Event\discretionary {-}{}{}Subscriber}{15}
+\contentsline {subsection}{\numberline {2.8}Game Class Reference}{15}
+\contentsline {subsubsection}{\numberline {2.8.1}Detailed Description}{17}
+\contentsline {subsubsection}{\numberline {2.8.2}Constructor \& Destructor Documentation}{18}
+\contentsline {paragraph}{\numberline {2.8.2.1}Game}{18}
+\contentsline {paragraph}{\numberline {2.8.2.2}$\sim $\discretionary {-}{}{}Game}{18}
+\contentsline {subsubsection}{\numberline {2.8.3}Member Function Documentation}{18}
+\contentsline {paragraph}{\numberline {2.8.3.1}process\discretionary {-}{}{}\_\discretionary {-}{}{}event}{18}
+\contentsline {paragraph}{\numberline {2.8.3.2}announce\discretionary {-}{}{}\_\discretionary {-}{}{}event}{18}
+\contentsline {subsubsection}{\numberline {2.8.4}Member Data Documentation}{18}
+\contentsline {paragraph}{\numberline {2.8.4.1}\discretionary {-}{}{}\_\discretionary {-}{}{}player}{18}
+\contentsline {paragraph}{\numberline {2.8.4.2}\discretionary {-}{}{}\_\discretionary {-}{}{}other\discretionary {-}{}{}Player}{18}
+\contentsline {paragraph}{\numberline {2.8.4.3}\discretionary {-}{}{}\_\discretionary {-}{}{}cat}{18}
+\contentsline {paragraph}{\numberline {2.8.4.4}\discretionary {-}{}{}\_\discretionary {-}{}{}mouse}{18}
+\contentsline {paragraph}{\numberline {2.8.4.5}\discretionary {-}{}{}\_\discretionary {-}{}{}game\discretionary {-}{}{}Timer}{19}
+\contentsline {subsection}{\numberline {2.9}G\discretionary {-}{}{}U\discretionary {-}{}{}I Class Reference}{19}
+\contentsline {subsubsection}{\numberline {2.9.1}Detailed Description}{20}
+\contentsline {subsubsection}{\numberline {2.9.2}Constructor \& Destructor Documentation}{21}
+\contentsline {paragraph}{\numberline {2.9.2.1}G\discretionary {-}{}{}U\discretionary {-}{}{}I}{21}
+\contentsline {subsubsection}{\numberline {2.9.3}Member Function Documentation}{21}
+\contentsline {paragraph}{\numberline {2.9.3.1}process\discretionary {-}{}{}\_\discretionary {-}{}{}event}{21}
+\contentsline {paragraph}{\numberline {2.9.3.2}process\discretionary {-}{}{}\_\discretionary {-}{}{}screen}{21}
+\contentsline {subsubsection}{\numberline {2.9.4}Member Data Documentation}{21}
+\contentsline {paragraph}{\numberline {2.9.4.1}\discretionary {-}{}{}\_\discretionary {-}{}{}refresh\discretionary {-}{}{}Timer}{21}
+\contentsline {paragraph}{\numberline {2.9.4.2}\discretionary {-}{}{}\_\discretionary {-}{}{}refresh\discretionary {-}{}{}Rate}{21}
+\contentsline {subsection}{\numberline {2.10}Keyboard Class Reference}{21}
+\contentsline {subsubsection}{\numberline {2.10.1}Detailed Description}{23}
+\contentsline {subsubsection}{\numberline {2.10.2}Member Function Documentation}{23}
+\contentsline {paragraph}{\numberline {2.10.2.1}process\discretionary {-}{}{}\_\discretionary {-}{}{}keyboard}{24}
+\contentsline {paragraph}{\numberline {2.10.2.2}announce\discretionary {-}{}{}\_\discretionary {-}{}{}event}{24}
+\contentsline {subsection}{\numberline {2.11}Log Class Reference}{24}
+\contentsline {subsubsection}{\numberline {2.11.1}Detailed Description}{25}
+\contentsline {subsubsection}{\numberline {2.11.2}Member Function Documentation}{25}
+\contentsline {paragraph}{\numberline {2.11.2.1}process\discretionary {-}{}{}\_\discretionary {-}{}{}event}{25}
+\contentsline {subsection}{\numberline {2.12}Mouse Class Reference}{26}
+\contentsline {subsubsection}{\numberline {2.12.1}Detailed Description}{27}
+\contentsline {subsubsection}{\numberline {2.12.2}Constructor \& Destructor Documentation}{27}
+\contentsline {paragraph}{\numberline {2.12.2.1}Mouse}{27}
+\contentsline {subsection}{\numberline {2.13}Network Class Reference}{28}
+\contentsline {subsubsection}{\numberline {2.13.1}Detailed Description}{30}
+\contentsline {subsubsection}{\numberline {2.13.2}Constructor \& Destructor Documentation}{30}
+\contentsline {paragraph}{\numberline {2.13.2.1}Network}{30}
+\contentsline {paragraph}{\numberline {2.13.2.2}Network}{30}
+\contentsline {paragraph}{\numberline {2.13.2.3}$\sim $\discretionary {-}{}{}Network}{30}
+\contentsline {subsubsection}{\numberline {2.13.3}Member Function Documentation}{30}
+\contentsline {paragraph}{\numberline {2.13.3.1}process\discretionary {-}{}{}\_\discretionary {-}{}{}event}{30}
+\contentsline {paragraph}{\numberline {2.13.3.2}process\discretionary {-}{}{}\_\discretionary {-}{}{}messages}{30}
+\contentsline {paragraph}{\numberline {2.13.3.3}is\discretionary {-}{}{}\_\discretionary {-}{}{}connected}{31}
+\contentsline {paragraph}{\numberline {2.13.3.4}new\discretionary {-}{}{}\_\discretionary {-}{}{}connection}{31}
+\contentsline {paragraph}{\numberline {2.13.3.5}new\discretionary {-}{}{}\_\discretionary {-}{}{}connection}{31}
+\contentsline {paragraph}{\numberline {2.13.3.6}timeout}{31}
+\contentsline {paragraph}{\numberline {2.13.3.7}announce\discretionary {-}{}{}\_\discretionary {-}{}{}event}{31}
+\contentsline {subsubsection}{\numberline {2.13.4}Member Data Documentation}{31}
+\contentsline {paragraph}{\numberline {2.13.4.1}\discretionary {-}{}{}\_\discretionary {-}{}{}ctn}{31}
+\contentsline {paragraph}{\numberline {2.13.4.2}\discretionary {-}{}{}\_\discretionary {-}{}{}network\discretionary {-}{}{}I\discretionary {-}{}{}D}{32}

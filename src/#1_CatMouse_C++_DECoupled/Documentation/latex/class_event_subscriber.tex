@@ -1,0 +1,74 @@
+\subsection{Event\-Subscriber Interface Reference}
+\label{class_event_subscriber}\index{Event\-Subscriber@{Event\-Subscriber}}
+
+
+{\ttfamily \#include $<$Event\-Subscriber.\-h$>$}
+
+
+
+Inheritance diagram for Event\-Subscriber\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_event_subscriber__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Event\-Subscriber\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{class_event_subscriber__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Event\-Subscriber} ()
+\item 
+virtual {\bf $\sim$\-Event\-Subscriber} ()
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Acts as a parent to subscribers and announcers so that the \doxyref{Event}{p.}{class_event} manager knows what to manager (i.\-e. both Announcers and Processors, and this allows this relationship to occur via inheritance) 
+
+\begin{DoxyAuthor}{Author}
+Alex Cummaudo 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7 Oct 2013 
+\end{DoxyDate}
+
+
+\subsubsection{Constructor \& Destructor Documentation}
+\index{Event\-Subscriber@{Event\-Subscriber}!Event\-Subscriber@{Event\-Subscriber}}
+\index{Event\-Subscriber@{Event\-Subscriber}!EventSubscriber@{Event\-Subscriber}}
+\paragraph[{Event\-Subscriber}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Subscriber\-::\-Event\-Subscriber (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_event_subscriber_aedef374acbc811e88f526dd20e86e609}
+
+
+To dynamically add event subscribers to the \doxyref{Event\-Manager}{p.}{class_event_manager} on creation, the \doxyref{Event\-Subscriber}{p.}{class_event_subscriber} constructor does this for us. 
+
+\index{Event\-Subscriber@{Event\-Subscriber}!$\sim$\-Event\-Subscriber@{$\sim$\-Event\-Subscriber}}
+\index{$\sim$\-Event\-Subscriber@{$\sim$\-Event\-Subscriber}!EventSubscriber@{Event\-Subscriber}}
+\paragraph[{$\sim$\-Event\-Subscriber}]{\setlength{\rightskip}{0pt plus 5cm}virtual Event\-Subscriber\-::$\sim$\-Event\-Subscriber (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_event_subscriber_a04961ec9f1f75657df312524212bcedc}
+
+
+To make \doxyref{Event\-Subscriber}{p.}{class_event_subscriber} polymorphic, make a virtual destructor---this will allow for dynamic casting in the \doxyref{Event\-Manager}{p.}{class_event_manager}. On invocation, the \doxyref{Event\-Manager}{p.}{class_event_manager} will forget about this subscriber. 
+
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/\-Alex/\-Dropbox/\-Swinburne/\-H\-I\-T2302 -\/ O\-O\-P/\-Projects/\-Cat and Mouse/\#1\-\_\-\-Cat\-Mouse\-\_\-\-C++\-\_\-\-D\-E\-Coupled/src/{\bf Event\-Subscriber.\-h}\end{DoxyCompactItemize}

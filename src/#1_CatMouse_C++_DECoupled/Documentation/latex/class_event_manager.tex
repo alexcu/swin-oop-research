@@ -1,0 +1,130 @@
+\subsection{Event\-Manager Class Reference}
+\label{class_event_manager}\index{Event\-Manager@{Event\-Manager}}
+
+
+{\ttfamily \#include $<$Event\-Manager.\-h$>$}
+
+
+
+Collaboration diagram for Event\-Manager\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{class_event_manager__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Event\-Manager} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bf publish\-\_\-event} ({\bf Event} $\ast$e\-Data)
+\item 
+static void {\bf add\-\_\-subscriber} ({\bf Event\-Subscriber} $\ast$sub)
+\item 
+static void {\bf forget\-\_\-subscriber} ({\bf Event\-Subscriber} $\ast$sub)
+\end{DoxyCompactItemize}
+\subsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static vector$<$ {\bf Event\-Subscriber} $\ast$ $>$ $\ast$ {\bf \-\_\-subs}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Defines \doxyref{Event\-Manager}{p.}{class_event_manager} class which processes each event to each kind of \doxyref{Event\-Processor}{p.}{class_event_processor}. 
+
+\begin{DoxyAuthor}{Author}
+Alex Cummaudo 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7 Oct 2013 
+\end{DoxyDate}
+\begin{DoxyNote}{Note}
+This is a static member class; so that clients do not need to make an instance of an \doxyref{Event\-Manager}{p.}{class_event_manager} (since there's only ever going to be one processor). Therefore we invoke \doxyref{Event\-Manager}{p.}{class_event_manager} by calling directly on the class (i.\-e. Event\-Manager\-::notify\-\_\-subscribers(event)) 
+\end{DoxyNote}
+
+
+\subsubsection{Constructor \& Destructor Documentation}
+\index{Event\-Manager@{Event\-Manager}!Event\-Manager@{Event\-Manager}}
+\index{Event\-Manager@{Event\-Manager}!EventManager@{Event\-Manager}}
+\paragraph[{Event\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Event\-Manager\-::\-Event\-Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_event_manager_a89099b22114f158b5c530edfea52371d}
+
+
+Constructor initialises \-\_\-subs vector. 
+
+
+
+\subsubsection{Member Function Documentation}
+\index{Event\-Manager@{Event\-Manager}!publish\-\_\-event@{publish\-\_\-event}}
+\index{publish\-\_\-event@{publish\-\_\-event}!EventManager@{Event\-Manager}}
+\paragraph[{publish\-\_\-event}]{\setlength{\rightskip}{0pt plus 5cm}void Event\-Manager\-::publish\-\_\-event (
+\begin{DoxyParamCaption}
+\item[{{\bf Event} $\ast$}]{e\-Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_event_manager_aabfb6a74c877b0b1a6cc208282015d00}
+
+
+Processes the event for each kind subscriber who publishes events (i.\-e. Event\-Processors O\-N\-L\-Y!) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e\-Data} & \doxyref{Event}{p.}{class_event} to publish to all Event\-Processors \\
+\hline
+\end{DoxyParams}
+\index{Event\-Manager@{Event\-Manager}!add\-\_\-subscriber@{add\-\_\-subscriber}}
+\index{add\-\_\-subscriber@{add\-\_\-subscriber}!EventManager@{Event\-Manager}}
+\paragraph[{add\-\_\-subscriber}]{\setlength{\rightskip}{0pt plus 5cm}void Event\-Manager\-::add\-\_\-subscriber (
+\begin{DoxyParamCaption}
+\item[{{\bf Event\-Subscriber} $\ast$}]{sub}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_event_manager_aad31c655d35869c7265f442f0a056d07}
+
+
+Adds a subscriber to the \-\_\-subs vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sub} & Subscriber to manage \\
+\hline
+\end{DoxyParams}
+\index{Event\-Manager@{Event\-Manager}!forget\-\_\-subscriber@{forget\-\_\-subscriber}}
+\index{forget\-\_\-subscriber@{forget\-\_\-subscriber}!EventManager@{Event\-Manager}}
+\paragraph[{forget\-\_\-subscriber}]{\setlength{\rightskip}{0pt plus 5cm}void Event\-Manager\-::forget\-\_\-subscriber (
+\begin{DoxyParamCaption}
+\item[{{\bf Event\-Subscriber} $\ast$}]{sub}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_event_manager_af8aa888585327e7f5cb14fa44565cc01}
+
+
+Removes a subscriber to the \-\_\-subs vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sub} & Subscriber to forget \\
+\hline
+\end{DoxyParams}
+
+
+\subsubsection{Member Data Documentation}
+\index{Event\-Manager@{Event\-Manager}!\-\_\-subs@{\-\_\-subs}}
+\index{\-\_\-subs@{\-\_\-subs}!EventManager@{Event\-Manager}}
+\paragraph[{\-\_\-subs}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Event\-Subscriber} $\ast$ $>$ $\ast$ Event\-Manager\-::\-\_\-subs\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_event_manager_a9e5d9ebb85a1c4c8689c3074661481be}
+
+
+Declare subscribers (who process or announce events) vector. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/\-Alex/\-Dropbox/\-Swinburne/\-H\-I\-T2302 -\/ O\-O\-P/\-Projects/\-Cat and Mouse/\#1\-\_\-\-Cat\-Mouse\-\_\-\-C++\-\_\-\-D\-E\-Coupled/src/{\bf Event\-Manager.\-h}\item 
+/\-Users/\-Alex/\-Dropbox/\-Swinburne/\-H\-I\-T2302 -\/ O\-O\-P/\-Projects/\-Cat and Mouse/\#1\-\_\-\-Cat\-Mouse\-\_\-\-C++\-\_\-\-D\-E\-Coupled/src/{\bf Event\-Manager.\-cpp}\end{DoxyCompactItemize}

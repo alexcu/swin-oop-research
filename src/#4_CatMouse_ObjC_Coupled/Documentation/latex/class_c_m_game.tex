@@ -1,0 +1,154 @@
+\subsection{C\-M\-Game Class Reference}
+\label{class_c_m_game}\index{C\-M\-Game@{C\-M\-Game}}
+
+
+{\ttfamily \#import $<$C\-M\-Game.\-h$>$}
+
+
+
+Collaboration diagram for C\-M\-Game\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{class_c_m_game__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(B\-O\-O\-L) -\/ {\bf is\-Valid}{\ttfamily  [implementation]}
+\item 
+(id) -\/ {\bf init\-As\-Host\-Cat}{\ttfamily  [implementation]}
+\item 
+(id) -\/ {\bf init\-As\-Client\-Mouse\-Connecting\-To\-:}{\ttfamily  [implementation]}
+\item 
+(void) -\/ {\bf dealloc}{\ttfamily  [implementation]}
+\item 
+(void) -\/ {\bf process\-Game}{\ttfamily  [implementation]}
+\item 
+(void) -\/ {\bf check\-Keys}{\ttfamily  [implementation]}
+\item 
+(void) -\/ {\bf send\-Player\-Update}{\ttfamily  [implementation]}
+\item 
+(void) -\/ {\bf update\-Other\-Player\-To\-X\-:and\-Y\-:}{\ttfamily  [implementation]}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Defines class for the general `game' of the cat and mice. 
+
+\begin{DoxyAuthor}{Author}
+Alex Cummaudo 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+16 Oct 2013 
+\end{DoxyDate}
+
+
+\subsubsection{Method Documentation}
+\index{C\-M\-Game@{C\-M\-Game}!is\-Valid@{is\-Valid}}
+\index{is\-Valid@{is\-Valid}!CMGame@{C\-M\-Game}}
+\paragraph[{is\-Valid}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) is\-Valid 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [implementation]}}\label{class_c_m_game_a7bd016efe97d2394bd0db507da495115}
+
+
+Implentation of the is\-Valid property. 
+
+\begin{DoxyReturn}{Returns}
+Valid connection of network 
+\end{DoxyReturn}
+\index{C\-M\-Game@{C\-M\-Game}!init\-As\-Host\-Cat@{init\-As\-Host\-Cat}}
+\index{init\-As\-Host\-Cat@{init\-As\-Host\-Cat}!CMGame@{C\-M\-Game}}
+\paragraph[{init\-As\-Host\-Cat}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-As\-Host\-Cat 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [implementation]}}\label{class_c_m_game_ab79fc869f932f5ef89acf9a75ed87296}
+
+
+On construction of a game, this overloaded version of the constructor will intitalise the network as a host, and make the player a cat. 
+
+\index{C\-M\-Game@{C\-M\-Game}!init\-As\-Client\-Mouse\-Connecting\-To\-:@{init\-As\-Client\-Mouse\-Connecting\-To\-:}}
+\index{init\-As\-Client\-Mouse\-Connecting\-To\-:@{init\-As\-Client\-Mouse\-Connecting\-To\-:}!CMGame@{C\-M\-Game}}
+\paragraph[{init\-As\-Client\-Mouse\-Connecting\-To\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-As\-Client\-Mouse\-Connecting\-To\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{ip\-Addr}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [implementation]}}\label{class_c_m_game_a116fd4aa295ab1087dac89304ea4a6d2}
+
+
+On construction of a game, this overloaded version of the constructor will intitalise the network as a client, and make the player a mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip\-Addr} & Host to connect to \\
+\hline
+\end{DoxyParams}
+\index{C\-M\-Game@{C\-M\-Game}!dealloc@{dealloc}}
+\index{dealloc@{dealloc}!CMGame@{C\-M\-Game}}
+\paragraph[{dealloc}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) dealloc 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [implementation]}}\label{class_c_m_game_add59208ecb5b0c748bb50e2638603478}
+
+
+Destructor removes all references to my owned views. 
+
+\index{C\-M\-Game@{C\-M\-Game}!process\-Game@{process\-Game}}
+\index{process\-Game@{process\-Game}!CMGame@{C\-M\-Game}}
+\paragraph[{process\-Game}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) process\-Game 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [implementation]}}\label{class_c_m_game_add0d43fc0f803ea5a8e52cda4d9668d4}
+
+
+Called to process the game. 
+
+\index{C\-M\-Game@{C\-M\-Game}!check\-Keys@{check\-Keys}}
+\index{check\-Keys@{check\-Keys}!CMGame@{C\-M\-Game}}
+\paragraph[{check\-Keys}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) check\-Keys 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [implementation]}}\label{class_c_m_game_a8cb47d646b07e195b55b81175c58b93b}
+
+
+Method called to update the players position and send it to the remote model. 
+
+\index{C\-M\-Game@{C\-M\-Game}!send\-Player\-Update@{send\-Player\-Update}}
+\index{send\-Player\-Update@{send\-Player\-Update}!CMGame@{C\-M\-Game}}
+\paragraph[{send\-Player\-Update}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) send\-Player\-Update 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [implementation]}}\label{class_c_m_game_a0dbbef1051cd85e9d3bd7cf3a6afa05f}
+
+
+Sends a message over the network to update the current player's position. 
+
+\index{C\-M\-Game@{C\-M\-Game}!update\-Other\-Player\-To\-X\-:and\-Y\-:@{update\-Other\-Player\-To\-X\-:and\-Y\-:}}
+\index{update\-Other\-Player\-To\-X\-:and\-Y\-:@{update\-Other\-Player\-To\-X\-:and\-Y\-:}!CMGame@{C\-M\-Game}}
+\paragraph[{update\-Other\-Player\-To\-X\-:and\-Y\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) update\-Other\-Player\-To\-X\-: 
+\begin{DoxyParamCaption}
+\item[{(float)}]{x}
+\item[{andY:(float)}]{y}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [implementation]}}\label{class_c_m_game_ad06bf49bd774ec0a85973f8bcb55d155}
+
+
+Updates the other player's position. 
+
+\begin{DoxyNote}{Note}
+This is called from \doxyref{C\-M\-Network}{p.}{interface_c_m_network} 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/\-Alex/\-Dropbox/\-Swinburne/\-H\-I\-T2302 -\/ O\-O\-P/\-Projects/\-Cat and Mouse/\#4\-\_\-\-Cat\-Mouse\-\_\-\-Obj\-C\-\_\-\-Coupled/src/{\bf C\-M\-Game.\-m}\end{DoxyCompactItemize}

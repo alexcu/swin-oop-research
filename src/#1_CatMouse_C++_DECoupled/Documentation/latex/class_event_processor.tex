@@ -1,0 +1,73 @@
+\subsection{Event\-Processor Interface Reference}
+\label{class_event_processor}\index{Event\-Processor@{Event\-Processor}}
+
+
+{\ttfamily \#include $<$Event\-Processor.\-h$>$}
+
+
+
+Inheritance diagram for Event\-Processor\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_event_processor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Event\-Processor\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{class_event_processor__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bf process\-\_\-event} ({\bf Event} $\ast$e\-Data)=0
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+An pure abstract class that defines all the methods that each processor of events must implement. 
+
+\begin{DoxyAuthor}{Author}
+Alex Cummaudo 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7 Oct 2013 
+\end{DoxyDate}
+\begin{DoxyNote}{Note}
+Inherits as virtual so that any users of B\-O\-T\-H Event\-Processors and Event\-Subscribers will avoid diamond inheritance issues. 
+\end{DoxyNote}
+
+
+\subsubsection{Member Function Documentation}
+\index{Event\-Processor@{Event\-Processor}!process\-\_\-event@{process\-\_\-event}}
+\index{process\-\_\-event@{process\-\_\-event}!EventProcessor@{Event\-Processor}}
+\paragraph[{process\-\_\-event}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Event\-Processor\-::process\-\_\-event (
+\begin{DoxyParamCaption}
+\item[{{\bf Event} $\ast$}]{e\-Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_event_processor_a20ce019a16fcf8ba67b6547750bf6655}
+
+
+Defines that whoever uses this interface must process an event in anyway with the given \doxyref{Event}{p.}{class_event}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e\-Data} & \doxyref{Event}{p.}{class_event} Data to process \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in {\bf Game} \doxyref{}{p.}{class_game_a2651e0c33b4e247719d81cba4bc9e6d8}, {\bf G\-U\-I} \doxyref{}{p.}{class_g_u_i_a1d1b90dd1d77ccc97ce2861359767a20}, {\bf Network} \doxyref{}{p.}{class_network_a2b53d4aa5ca44868b4437a11fe18da97}, and {\bf Log} \doxyref{}{p.}{class_log_a5be2a1f651af3de38cf26a6a84567f51}.
+
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/\-Alex/\-Dropbox/\-Swinburne/\-H\-I\-T2302 -\/ O\-O\-P/\-Projects/\-Cat and Mouse/\#1\-\_\-\-Cat\-Mouse\-\_\-\-C++\-\_\-\-D\-E\-Coupled/src/{\bf Event\-Processor.\-h}\end{DoxyCompactItemize}

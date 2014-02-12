@@ -1,0 +1,87 @@
+\subsection{Keyboard Class Reference}
+\label{class_keyboard}\index{Keyboard@{Keyboard}}
+
+
+{\ttfamily \#include $<$Keyboard.\-h$>$}
+
+
+
+Inheritance diagram for Keyboard\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{class_keyboard__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Keyboard\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{class_keyboard__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf process\-\_\-keyboard} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bf announce\-\_\-event} (string key)
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Defines class to capture keyboard events and pass them to the processor. 
+
+\begin{DoxyAuthor}{Author}
+Alex Cummaudo 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+19 Oct 2013 
+\end{DoxyDate}
+
+
+\subsubsection{Member Function Documentation}
+\index{Keyboard@{Keyboard}!process\-\_\-keyboard@{process\-\_\-keyboard}}
+\index{process\-\_\-keyboard@{process\-\_\-keyboard}!Keyboard@{Keyboard}}
+\paragraph[{process\-\_\-keyboard}]{\setlength{\rightskip}{0pt plus 5cm}void Keyboard\-::process\-\_\-keyboard (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_keyboard_ac2c44b1099dfef44e98ae842140d8338}
+
+
+Captures keydown events and processes them by passing them to the \doxyref{Event\-Manager}{p.}{class_event_manager}. 
+
+\index{Keyboard@{Keyboard}!announce\-\_\-event@{announce\-\_\-event}}
+\index{announce\-\_\-event@{announce\-\_\-event}!Keyboard@{Keyboard}}
+\paragraph[{announce\-\_\-event}]{\setlength{\rightskip}{0pt plus 5cm}void Keyboard\-::announce\-\_\-event (
+\begin{DoxyParamCaption}
+\item[{string}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}\label{class_keyboard_a95fb72c2a1fc6085f8f76b01e95b97ac}
+
+
+Sends an event to all subscribers with the given key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & Message to announce when creating an \doxyref{Event}{p.}{class_event} \\
+\hline
+\end{DoxyParams}
+
+
+Implements {\bf Event\-Announcer} \doxyref{}{p.}{class_event_announcer_a44cb9090f6a15571de9a2f605cd4d898}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/\-Alex/\-Dropbox/\-Swinburne/\-H\-I\-T2302 -\/ O\-O\-P/\-Projects/\-Cat and Mouse/\#1\-\_\-\-Cat\-Mouse\-\_\-\-C++\-\_\-\-D\-E\-Coupled/src/{\bf Keyboard.\-h}\item 
+/\-Users/\-Alex/\-Dropbox/\-Swinburne/\-H\-I\-T2302 -\/ O\-O\-P/\-Projects/\-Cat and Mouse/\#1\-\_\-\-Cat\-Mouse\-\_\-\-C++\-\_\-\-D\-E\-Coupled/src/{\bf Keyboard.\-cpp}\end{DoxyCompactItemize}

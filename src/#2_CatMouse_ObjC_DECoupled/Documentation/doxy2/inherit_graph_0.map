@@ -1,0 +1,14 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$protocol_c_m_event_announcer-p.html" title="An protocol that defines all the methods that each announcer of events must implement. " alt="" coords="347,31,498,57"/>
+<area shape="rect" id="node2" href="$interface_c_m_keyboard.html" title="Defines class to capture keyboard events and pass them to the processor. " alt="" coords="561,56,660,83"/>
+<area shape="rect" id="node3" href="$interface_c_m_network.html" title="Packages up data recieved from the controller and passes it to a given network. " alt="" coords="566,5,655,32"/>
+<area shape="rect" id="node5" href="$interface_c_m_animal.html" title="Defines an abstract, base class for a playable `thing&#39; on the screen which can move around etc..." alt="" coords="570,208,651,235"/>
+<area shape="rect" id="node8" href="$interface_c_m_event.html" title="Defines event class of what to pass a view, thereby allowing a link between each view and each model..." alt="" coords="573,259,649,285"/>
+<area shape="rect" id="node9" href="$interface_c_m_event_manager.html" title="Defines Event Manager class which processes each event to each kind of event subscriber. " alt="" coords="547,309,674,336"/>
+<area shape="rect" id="node10" href="$interface_c_m_g_u_i.html" title="Provides GUI View for the game to display the game on in a graphics window. " alt="" coords="577,157,644,184"/>
+<area shape="rect" id="node11" href="$interface_c_m_log.html" title="CLI view to game. " alt="" coords="579,107,643,133"/>
+<area shape="rect" id="node6" href="$interface_c_m_cat.html" title="Defines an class for a playable chaser (i.e. the chasing cat) " alt="" coords="732,183,796,209"/>
+<area shape="rect" id="node7" href="$interface_c_m_mouse.html" title="Defines an class for a playable chasee (i.e. the hunted mouse) " alt="" coords="723,233,805,260"/>
+<area shape="rect" id="node13" href="$protocol_c_m_event_subscriber-p.html" title="Acts as a parent to subscribers and announcers so that the Event manager knows what to manager (i..." alt="" coords="147,107,298,133"/>
+<area shape="rect" id="node14" href="$protocol_c_m_event_processor-p.html" title="A protocol class that defines all the methods that each processor of events must implement. " alt="" coords="349,107,496,133"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="CMAnimal" name="CMAnimal">
+<area shape="rect" id="node3" href="$interface_c_m_cat.html" title="Defines an class for a playable chaser (i.e. the chasing cat) " alt="" coords="5,344,69,421"/>
+<area shape="rect" id="node4" href="$interface_c_m_mouse.html" title="Defines an class for a playable chasee (i.e. the hunted mouse) " alt="" coords="93,344,176,421"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="&lt;CMEventProcessor&gt;" name="&lt;CMEventProcessor&gt;">
+<area shape="rect" id="node4" href="$interface_c_m_g_u_i.html" title="Provides GUI View for the game to display the game on in a graphics window. " alt="" coords="5,469,152,576"/>
+<area shape="rect" id="node5" href="$interface_c_m_log.html" title="CLI view to game. " alt="" coords="177,469,292,576"/>
+<area shape="rect" id="node6" href="$interface_c_m_network.html" title="Packages up data recieved from the controller and passes it to a given network. " alt="" coords="317,381,571,664"/>
+<area shape="rect" id="node2" href="$protocol_c_m_event_subscriber-p.html" title="Acts as a parent to subscribers and announcers so that the Event manager knows what to manager (i..." alt="" coords="159,131,309,208"/>
+</map>

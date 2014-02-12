@@ -1,0 +1,265 @@
+\subsection{Network Class Reference}
+\label{class_network}\index{Network@{Network}}
+
+
+{\ttfamily \#include $<$Network.\-h$>$}
+
+
+
+Inheritance diagram for Network\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{class_network__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Network\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{class_network__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bf process\-\_\-event} ({\bf Event} $\ast$e\-Data)
+\item 
+{\bf Network} ()
+\item 
+{\bf Network} (string ip\-Addr)
+\item 
+{\bf $\sim$\-Network} ()
+\item 
+void {\bf process\-\_\-messages} ()
+\item 
+bool {\bf is\-\_\-connected} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+connection {\bf new\-\_\-connection} ()
+\item 
+connection {\bf new\-\_\-connection} (string ip\-Addr)
+\item 
+void {\bf timeout} (string msg\-Prompt, string msg\-Succ, string msg\-Fail, int timeout\-Secs, function$<$ void(void)$>$ countdown\-Body, function$<$ bool(void)$>$ break\-Condition)
+\item 
+virtual void {\bf announce\-\_\-event} (string msg)
+\end{DoxyCompactItemize}
+\subsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+connection {\bf \-\_\-ctn}
+\item 
+string {\bf \-\_\-network\-I\-D}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Packages up data recieved from the controller and passes it to a given network. 
+
+\begin{DoxyAuthor}{Author}
+Alex Cummaudo 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7 Oct 2013 
+\end{DoxyDate}
+
+
+\subsubsection{Constructor \& Destructor Documentation}
+\index{Network@{Network}!Network@{Network}}
+\index{Network@{Network}!Network@{Network}}
+\paragraph[{Network}]{\setlength{\rightskip}{0pt plus 5cm}Network\-::\-Network (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_network_a3cc2fb4f8fa4d507077e8da85ce5a1c8}
+
+
+Constructor initiates a connection as a host. 
+
+\index{Network@{Network}!Network@{Network}}
+\index{Network@{Network}!Network@{Network}}
+\paragraph[{Network}]{\setlength{\rightskip}{0pt plus 5cm}Network\-::\-Network (
+\begin{DoxyParamCaption}
+\item[{string}]{ip\-Addr}
+\end{DoxyParamCaption}
+)}\label{class_network_af7e2f9d5333bdc256adf4a6d49f892f0}
+
+
+Constructor initiates a connection to a given ip address (as a client) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip\-Addr} & The I\-P Address of the host this client will connect to \\
+\hline
+\end{DoxyParams}
+\index{Network@{Network}!$\sim$\-Network@{$\sim$\-Network}}
+\index{$\sim$\-Network@{$\sim$\-Network}!Network@{Network}}
+\paragraph[{$\sim$\-Network}]{\setlength{\rightskip}{0pt plus 5cm}Network\-::$\sim$\-Network (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_network_a7a4e19cdb4bf0c7ecf82baa643831492}
+
+
+Destructor closes all connections and announces Goodbye message. 
+
+
+
+\subsubsection{Member Function Documentation}
+\index{Network@{Network}!process\-\_\-event@{process\-\_\-event}}
+\index{process\-\_\-event@{process\-\_\-event}!Network@{Network}}
+\paragraph[{process\-\_\-event}]{\setlength{\rightskip}{0pt plus 5cm}void Network\-::process\-\_\-event (
+\begin{DoxyParamCaption}
+\item[{{\bf Event} $\ast$}]{e\-Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_network_a2b53d4aa5ca44868b4437a11fe18da97}
+
+
+Process the event data by packaging it and sending it over the network as a string (i.\-e. an outgoing event to a network string) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e\-Data} & \doxyref{Event}{p.}{class_event} Data to process \\
+\hline
+\end{DoxyParams}
+
+
+Implements {\bf Event\-Processor} \doxyref{}{p.}{class_event_processor_a20ce019a16fcf8ba67b6547750bf6655}.
+
+\index{Network@{Network}!process\-\_\-messages@{process\-\_\-messages}}
+\index{process\-\_\-messages@{process\-\_\-messages}!Network@{Network}}
+\paragraph[{process\-\_\-messages}]{\setlength{\rightskip}{0pt plus 5cm}void Network\-::process\-\_\-messages (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_network_ad88853109086fc046638ad69b483fbd1}
+
+
+Process messages that are being recieved (i.\-e. incoming network string to an outgoing event) 
+
+\begin{DoxyNote}{Note}
+Messages recieved in the format\-: key\-:value,key\-:value$|$ etc. Hence we want to parse the msg back into its event kind
+\end{DoxyNote}
+\index{Network@{Network}!is\-\_\-connected@{is\-\_\-connected}}
+\index{is\-\_\-connected@{is\-\_\-connected}!Network@{Network}}
+\paragraph[{is\-\_\-connected}]{\setlength{\rightskip}{0pt plus 5cm}bool Network\-::is\-\_\-connected (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_network_a825426c85012724d2f41ba4a8e54716e}
+Delcare is connected property \begin{DoxyReturn}{Returns}
+Boolean whether or not the network is connected 
+\end{DoxyReturn}
+\index{Network@{Network}!new\-\_\-connection@{new\-\_\-connection}}
+\index{new\-\_\-connection@{new\-\_\-connection}!Network@{Network}}
+\paragraph[{new\-\_\-connection}]{\setlength{\rightskip}{0pt plus 5cm}connection Network\-::new\-\_\-connection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_network_ae4d9e6c18f9569f5fbc6812b3f425b2e}
+
+
+Initiates the connection as a host, returning true or false on a success or error. 
+
+\begin{DoxyReturn}{Returns}
+A new host connection to work with 
+\end{DoxyReturn}
+Force break condition to be true \index{Network@{Network}!new\-\_\-connection@{new\-\_\-connection}}
+\index{new\-\_\-connection@{new\-\_\-connection}!Network@{Network}}
+\paragraph[{new\-\_\-connection}]{\setlength{\rightskip}{0pt plus 5cm}connection Network\-::new\-\_\-connection (
+\begin{DoxyParamCaption}
+\item[{string}]{ip\-\_\-addr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_network_a8a6b29f8675b35819073f0fa388e7b37}
+
+
+Initiates the connection as a client, returning true or false on a success or error. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip\-\_\-addr} & I\-P Address that this client should connect to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new client connection to work with 
+\end{DoxyReturn}
+\index{Network@{Network}!timeout@{timeout}}
+\index{timeout@{timeout}!Network@{Network}}
+\paragraph[{timeout}]{\setlength{\rightskip}{0pt plus 5cm}void Network\-::timeout (
+\begin{DoxyParamCaption}
+\item[{string}]{msg\-Prompt, }
+\item[{string}]{msg\-Succ, }
+\item[{string}]{msg\-Fail, }
+\item[{int}]{timeout\-Secs, }
+\item[{function$<$ void(void)$>$}]{countdown\-Body, }
+\item[{function$<$ bool(void)$>$}]{break\-Condition}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_network_a1368ca33ad5eec63f5146c878756a08b}
+
+
+The timeout connection; runs the passed function success on a success, and error function on error; allow passing of two functors so that lambda expressions can be passed in as parameters to the timeout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg\-Prompt} & Prompt message announced when timeout begins (i.\-e., why we're having a timeout). \\
+\hline
+{\em msg\-Succ} & Message announced when timeout did not run out and the break condition was met \\
+\hline
+{\em msg\-Fail} & Message announced when timeout did ran out of timeout\-Secs and the break condition was never met \\
+\hline
+{\em timeout\-Secs} & How long to run timeout for \\
+\hline
+{\em countdown\-Body} & Function to run every second on timeout \\
+\hline
+{\em break\-Condition} & Function that returns a bool to check whether or not the timeout should break \\
+\hline
+\end{DoxyParams}
+\index{Network@{Network}!announce\-\_\-event@{announce\-\_\-event}}
+\index{announce\-\_\-event@{announce\-\_\-event}!Network@{Network}}
+\paragraph[{announce\-\_\-event}]{\setlength{\rightskip}{0pt plus 5cm}void Network\-::announce\-\_\-event (
+\begin{DoxyParamCaption}
+\item[{string}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}\label{class_network_aa9fa251f3d9901702987a50dd681e4cc}
+
+
+Sends an event to all subscribers with the given message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & Message to announce when creating an \doxyref{Event}{p.}{class_event} \\
+\hline
+\end{DoxyParams}
+
+
+Implements {\bf Event\-Announcer} \doxyref{}{p.}{class_event_announcer_a44cb9090f6a15571de9a2f605cd4d898}.
+
+
+
+\subsubsection{Member Data Documentation}
+\index{Network@{Network}!\-\_\-ctn@{\-\_\-ctn}}
+\index{\-\_\-ctn@{\-\_\-ctn}!Network@{Network}}
+\paragraph[{\-\_\-ctn}]{\setlength{\rightskip}{0pt plus 5cm}connection Network\-::\-\_\-ctn\hspace{0.3cm}{\ttfamily [private]}}\label{class_network_a86ac539e91f6178d7f3435e65e406dc0}
+
+
+\doxyref{Network}{p.}{class_network} connection controller between client and host. 
+
+\index{Network@{Network}!\-\_\-network\-I\-D@{\-\_\-network\-I\-D}}
+\index{\-\_\-network\-I\-D@{\-\_\-network\-I\-D}!Network@{Network}}
+\paragraph[{\-\_\-network\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}string Network\-::\-\_\-network\-I\-D\hspace{0.3cm}{\ttfamily [private]}}\label{class_network_aa2745126e6c7593e849e9522fdcc3b54}
+
+
+Defines a unique address of this machine. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/\-Alex/\-Dropbox/\-Swinburne/\-H\-I\-T2302 -\/ O\-O\-P/\-Projects/\-Cat and Mouse/\#1\-\_\-\-Cat\-Mouse\-\_\-\-C++\-\_\-\-D\-E\-Coupled/src/{\bf Network.\-h}\item 
+/\-Users/\-Alex/\-Dropbox/\-Swinburne/\-H\-I\-T2302 -\/ O\-O\-P/\-Projects/\-Cat and Mouse/\#1\-\_\-\-Cat\-Mouse\-\_\-\-C++\-\_\-\-D\-E\-Coupled/src/{\bf Network.\-cpp}\end{DoxyCompactItemize}

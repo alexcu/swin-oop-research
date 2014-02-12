@@ -1,0 +1,119 @@
+\subsection{C\-M\-Event\-Manager Class Reference}
+\label{interface_c_m_event_manager}\index{C\-M\-Event\-Manager@{C\-M\-Event\-Manager}}
+
+
+{\ttfamily \#import $<$C\-M\-Event\-Manager.\-h$>$}
+
+
+
+Inheritance diagram for C\-M\-Event\-Manager\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{interface_c_m_event_manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\-M\-Event\-Manager\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{interface_c_m_event_manager__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) + {\bf initialize}
+\item 
+(void) + {\bf publish\-Event\-:}
+\item 
+(void) + {\bf add\-Subscriber\-:}
+\item 
+(void) + {\bf forget\-Subscriber\-:}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Defines Event Manager class which processes each event to each kind of event subscriber. 
+
+\begin{DoxyAuthor}{Author}
+Alex Cummaudo 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+22 Oct 2013 
+\end{DoxyDate}
+\begin{DoxyNote}{Note}
+This is a factory member class; so that clients do not need to make an instance of an \doxyref{C\-M\-Event\-Manager}{p.}{interface_c_m_event_manager} (since there's only ever going to be one processor). Therefore we invoke Event\-Manager by calling directly on the class (i.\-e. [Event\-Manager notify\-Subscribers\-:Event]) 
+\end{DoxyNote}
+
+
+\subsubsection{Method Documentation}
+\index{C\-M\-Event\-Manager@{C\-M\-Event\-Manager}!initialize@{initialize}}
+\index{initialize@{initialize}!CMEventManager@{C\-M\-Event\-Manager}}
+\paragraph[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) initialize 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_c_m_event_manager_ae27a36eb1b692bba0f6a922f59a1af97}
+
+
+This method is automatically called on a creation of the C\-M\-Event\-Class object, and is used to initialise the N\-S\-Mutable\-Array that contains the subscribers. 
+
+This method is automatically called on a when class objects are created, to initialise the \-\_\-subs Collection. \index{C\-M\-Event\-Manager@{C\-M\-Event\-Manager}!publish\-Event\-:@{publish\-Event\-:}}
+\index{publish\-Event\-:@{publish\-Event\-:}!CMEventManager@{C\-M\-Event\-Manager}}
+\paragraph[{publish\-Event\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) publish\-Event\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-M\-Event}$\ast$)}]{event\-To\-Publish}
+\end{DoxyParamCaption}
+}\label{interface_c_m_event_manager_a31ab7ee6725e82a2b5b60235a29a5fd1}
+
+
+Processes the event for each kind subscriber (i.\-e. C\-M\-Event\-Processors O\-N\-L\-Y!) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\-To\-Publish} & \doxyref{C\-M\-Event}{p.}{interface_c_m_event} to publish to all C\-M\-Event\-Processors \\
+\hline
+\end{DoxyParams}
+\index{C\-M\-Event\-Manager@{C\-M\-Event\-Manager}!add\-Subscriber\-:@{add\-Subscriber\-:}}
+\index{add\-Subscriber\-:@{add\-Subscriber\-:}!CMEventManager@{C\-M\-Event\-Manager}}
+\paragraph[{add\-Subscriber\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) add\-Subscriber\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Object$<${\bf C\-M\-Event\-Subscriber}$>$$\ast$)}]{subscriber\-To\-Add}
+\end{DoxyParamCaption}
+}\label{interface_c_m_event_manager_ae651216c32fc2cc0d72422267321ea99}
+
+
+Adds a subscriber to the \-\_\-subs collection (can be any \doxyref{N\-S\-Object}{p.}{class_n_s_object-p} as long as it uses the \doxyref{C\-M\-Event\-Subscriber}{p.}{protocol_c_m_event_subscriber-p} interface---either a\-: \doxyref{C\-M\-Event\-Announcer}{p.}{protocol_c_m_event_announcer-p} or \doxyref{C\-M\-Event\-Processor}{p.}{protocol_c_m_event_processor-p}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em subscriber\-To\-Add} & Subscriber to now manage \\
+\hline
+\end{DoxyParams}
+\index{C\-M\-Event\-Manager@{C\-M\-Event\-Manager}!forget\-Subscriber\-:@{forget\-Subscriber\-:}}
+\index{forget\-Subscriber\-:@{forget\-Subscriber\-:}!CMEventManager@{C\-M\-Event\-Manager}}
+\paragraph[{forget\-Subscriber\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) forget\-Subscriber\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Object$<${\bf C\-M\-Event\-Subscriber}$>$$\ast$)}]{subscriber\-To\-Forget}
+\end{DoxyParamCaption}
+}\label{interface_c_m_event_manager_a477d2ae36b4feac1d33e1ab8b8315ea8}
+
+
+Kills a subscriber. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em subscriber\-To\-Kill} & Subscriber to now forget \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/\-Alex/\-Dropbox/\-Swinburne/\-H\-I\-T2302 -\/ O\-O\-P/\-Projects/\-Cat and Mouse/\#2\-\_\-\-Cat\-Mouse\-\_\-\-Obj\-C\-\_\-\-D\-E\-Coupled/src/{\bf C\-M\-Event\-Manager.\-h}\item 
+/\-Users/\-Alex/\-Dropbox/\-Swinburne/\-H\-I\-T2302 -\/ O\-O\-P/\-Projects/\-Cat and Mouse/\#2\-\_\-\-Cat\-Mouse\-\_\-\-Obj\-C\-\_\-\-D\-E\-Coupled/src/{\bf C\-M\-Event\-Manager.\-m}\end{DoxyCompactItemize}

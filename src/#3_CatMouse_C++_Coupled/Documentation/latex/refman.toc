@@ -1,0 +1,72 @@
+\contentsline {section}{\numberline {1}C++ Coupled Implementation}{1}
+\contentsline {section}{\numberline {2}Class Documentation}{2}
+\contentsline {subsection}{\numberline {2.1}Animal Class Reference}{2}
+\contentsline {subsubsection}{\numberline {2.1.1}Detailed Description}{3}
+\contentsline {subsubsection}{\numberline {2.1.2}Constructor \& Destructor Documentation}{4}
+\contentsline {paragraph}{\numberline {2.1.2.1}Animal}{4}
+\contentsline {paragraph}{\numberline {2.1.2.2}$\sim $\discretionary {-}{}{}Animal}{4}
+\contentsline {subsubsection}{\numberline {2.1.3}Member Function Documentation}{4}
+\contentsline {paragraph}{\numberline {2.1.3.1}move}{4}
+\contentsline {paragraph}{\numberline {2.1.3.2}get\discretionary {-}{}{}\_\discretionary {-}{}{}position}{4}
+\contentsline {paragraph}{\numberline {2.1.3.3}set\discretionary {-}{}{}\_\discretionary {-}{}{}position}{4}
+\contentsline {paragraph}{\numberline {2.1.3.4}get\discretionary {-}{}{}\_\discretionary {-}{}{}name}{4}
+\contentsline {paragraph}{\numberline {2.1.3.5}off\discretionary {-}{}{}\_\discretionary {-}{}{}screen}{4}
+\contentsline {subsubsection}{\numberline {2.1.4}Member Data Documentation}{4}
+\contentsline {paragraph}{\numberline {2.1.4.1}\discretionary {-}{}{}\_\discretionary {-}{}{}position}{5}
+\contentsline {paragraph}{\numberline {2.1.4.2}\discretionary {-}{}{}\_\discretionary {-}{}{}speed}{5}
+\contentsline {paragraph}{\numberline {2.1.4.3}\discretionary {-}{}{}\_\discretionary {-}{}{}name}{5}
+\contentsline {subsection}{\numberline {2.2}Cat Class Reference}{5}
+\contentsline {subsubsection}{\numberline {2.2.1}Detailed Description}{6}
+\contentsline {subsubsection}{\numberline {2.2.2}Constructor \& Destructor Documentation}{6}
+\contentsline {paragraph}{\numberline {2.2.2.1}Cat}{6}
+\contentsline {subsection}{\numberline {2.3}Game Class Reference}{7}
+\contentsline {subsubsection}{\numberline {2.3.1}Detailed Description}{8}
+\contentsline {subsubsection}{\numberline {2.3.2}Constructor \& Destructor Documentation}{8}
+\contentsline {paragraph}{\numberline {2.3.2.1}Game}{8}
+\contentsline {paragraph}{\numberline {2.3.2.2}Game}{8}
+\contentsline {paragraph}{\numberline {2.3.2.3}$\sim $\discretionary {-}{}{}Game}{8}
+\contentsline {subsubsection}{\numberline {2.3.3}Member Function Documentation}{8}
+\contentsline {paragraph}{\numberline {2.3.3.1}process\discretionary {-}{}{}\_\discretionary {-}{}{}game}{8}
+\contentsline {paragraph}{\numberline {2.3.3.2}update\discretionary {-}{}{}\_\discretionary {-}{}{}other\discretionary {-}{}{}\_\discretionary {-}{}{}player}{9}
+\contentsline {paragraph}{\numberline {2.3.3.3}is\discretionary {-}{}{}\_\discretionary {-}{}{}valid}{9}
+\contentsline {paragraph}{\numberline {2.3.3.4}send\discretionary {-}{}{}\_\discretionary {-}{}{}player\discretionary {-}{}{}\_\discretionary {-}{}{}update}{9}
+\contentsline {paragraph}{\numberline {2.3.3.5}check\discretionary {-}{}{}\_\discretionary {-}{}{}keys}{9}
+\contentsline {subsubsection}{\numberline {2.3.4}Member Data Documentation}{9}
+\contentsline {paragraph}{\numberline {2.3.4.1}\discretionary {-}{}{}\_\discretionary {-}{}{}player}{9}
+\contentsline {paragraph}{\numberline {2.3.4.2}\discretionary {-}{}{}\_\discretionary {-}{}{}other\discretionary {-}{}{}Player}{9}
+\contentsline {paragraph}{\numberline {2.3.4.3}\discretionary {-}{}{}\_\discretionary {-}{}{}cat}{9}
+\contentsline {paragraph}{\numberline {2.3.4.4}\discretionary {-}{}{}\_\discretionary {-}{}{}mouse}{9}
+\contentsline {paragraph}{\numberline {2.3.4.5}\discretionary {-}{}{}\_\discretionary {-}{}{}game\discretionary {-}{}{}Timer}{9}
+\contentsline {paragraph}{\numberline {2.3.4.6}\discretionary {-}{}{}\_\discretionary {-}{}{}network\discretionary {-}{}{}View}{9}
+\contentsline {paragraph}{\numberline {2.3.4.7}\discretionary {-}{}{}\_\discretionary {-}{}{}gui\discretionary {-}{}{}View}{9}
+\contentsline {subsection}{\numberline {2.4}G\discretionary {-}{}{}U\discretionary {-}{}{}I Class Reference}{10}
+\contentsline {subsubsection}{\numberline {2.4.1}Detailed Description}{10}
+\contentsline {subsubsection}{\numberline {2.4.2}Constructor \& Destructor Documentation}{10}
+\contentsline {paragraph}{\numberline {2.4.2.1}G\discretionary {-}{}{}U\discretionary {-}{}{}I}{10}
+\contentsline {subsubsection}{\numberline {2.4.3}Member Function Documentation}{10}
+\contentsline {paragraph}{\numberline {2.4.3.1}process\discretionary {-}{}{}\_\discretionary {-}{}{}screen}{10}
+\contentsline {paragraph}{\numberline {2.4.3.2}draw\discretionary {-}{}{}\_\discretionary {-}{}{}animal}{11}
+\contentsline {subsubsection}{\numberline {2.4.4}Member Data Documentation}{12}
+\contentsline {paragraph}{\numberline {2.4.4.1}\discretionary {-}{}{}\_\discretionary {-}{}{}refresh\discretionary {-}{}{}Timer}{12}
+\contentsline {paragraph}{\numberline {2.4.4.2}\discretionary {-}{}{}\_\discretionary {-}{}{}refresh\discretionary {-}{}{}Rate}{12}
+\contentsline {subsection}{\numberline {2.5}Mouse Class Reference}{12}
+\contentsline {subsubsection}{\numberline {2.5.1}Detailed Description}{13}
+\contentsline {subsubsection}{\numberline {2.5.2}Constructor \& Destructor Documentation}{13}
+\contentsline {paragraph}{\numberline {2.5.2.1}Mouse}{13}
+\contentsline {subsection}{\numberline {2.6}Network Class Reference}{14}
+\contentsline {subsubsection}{\numberline {2.6.1}Detailed Description}{15}
+\contentsline {subsubsection}{\numberline {2.6.2}Constructor \& Destructor Documentation}{15}
+\contentsline {paragraph}{\numberline {2.6.2.1}Network}{15}
+\contentsline {paragraph}{\numberline {2.6.2.2}Network}{15}
+\contentsline {paragraph}{\numberline {2.6.2.3}$\sim $\discretionary {-}{}{}Network}{15}
+\contentsline {subsubsection}{\numberline {2.6.3}Member Function Documentation}{15}
+\contentsline {paragraph}{\numberline {2.6.3.1}process\discretionary {-}{}{}\_\discretionary {-}{}{}messages}{15}
+\contentsline {paragraph}{\numberline {2.6.3.2}is\discretionary {-}{}{}\_\discretionary {-}{}{}connected}{15}
+\contentsline {paragraph}{\numberline {2.6.3.3}send\discretionary {-}{}{}\_\discretionary {-}{}{}message}{16}
+\contentsline {paragraph}{\numberline {2.6.3.4}new\discretionary {-}{}{}\_\discretionary {-}{}{}connection}{17}
+\contentsline {paragraph}{\numberline {2.6.3.5}new\discretionary {-}{}{}\_\discretionary {-}{}{}connection}{17}
+\contentsline {paragraph}{\numberline {2.6.3.6}timeout}{17}
+\contentsline {subsubsection}{\numberline {2.6.4}Member Data Documentation}{17}
+\contentsline {paragraph}{\numberline {2.6.4.1}\discretionary {-}{}{}\_\discretionary {-}{}{}ctn}{17}
+\contentsline {paragraph}{\numberline {2.6.4.2}\discretionary {-}{}{}\_\discretionary {-}{}{}network\discretionary {-}{}{}I\discretionary {-}{}{}D}{17}
+\contentsline {paragraph}{\numberline {2.6.4.3}\discretionary {-}{}{}\_\discretionary {-}{}{}game\discretionary {-}{}{}Model}{17}

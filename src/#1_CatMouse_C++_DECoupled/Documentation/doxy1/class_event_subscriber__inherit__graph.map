@@ -1,0 +1,9 @@
+<map id="EventSubscriber" name="EventSubscriber">
+<area shape="rect" id="node2" href="$class_event_announcer.html" title="An pure abstract class that defines all the methods that each announcer of events must implement..." alt="" coords="194,147,325,224"/>
+<area shape="rect" id="node6" href="$class_event_processor.html" title="An pure abstract class that defines all the methods that each processor of events must implement..." alt="" coords="359,147,484,224"/>
+<area shape="rect" id="node3" href="$class_game.html" title="Defines class for the general `game&#39; of the cat and mice. " alt="" coords="355,294,487,474"/>
+<area shape="rect" id="node4" href="$class_keyboard.html" title="Defines class to capture keyboard events and pass them to the processor. " alt="" coords="5,338,152,430"/>
+<area shape="rect" id="node5" href="$class_network.html" title="Packages up data recieved from the controller and passes it to a given network. " alt="" coords="176,272,331,496"/>
+<area shape="rect" id="node7" href="$class_g_u_i.html" title="Provides GUI View for the game to display the game on in a graphics window. " alt="" coords="661,323,792,445"/>
+<area shape="rect" id="node8" href="$class_log.html" title="CLI view to game. " alt="" coords="512,345,637,423"/>
+</map>

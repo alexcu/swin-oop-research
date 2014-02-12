@@ -1,0 +1,4 @@
+<map id="Log" name="Log">
+<area shape="rect" id="node2" href="$class_event_processor.html" title="An pure abstract class that defines all the methods that each processor of events must implement..." alt="" coords="13,147,139,224"/>
+<area shape="rect" id="node3" href="$class_event_subscriber.html" title="Acts as a parent to subscribers and announcers so that the Event manager knows what to manager (i..." alt="" coords="5,6,147,98"/>
+</map>

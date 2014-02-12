@@ -1,0 +1,185 @@
+\subsection{Animal Class Reference}
+\label{class_animal}\index{Animal@{Animal}}
+
+
+{\ttfamily \#include $<$Animal.\-h$>$}
+
+
+
+Inheritance diagram for Animal\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{class_animal__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Animal\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{class_animal__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Animal} ()
+\item 
+virtual {\bf $\sim$\-Animal} ()=0
+\item 
+void {\bf move} ({\bf dirs} dir)
+\item 
+point2d $\ast$const {\bf get\-\_\-position} ()
+\item 
+void {\bf set\-\_\-position} (point2d $\ast$new\-Pos)
+\item 
+string const {\bf get\-\_\-name} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+point2d $\ast$ {\bf \-\_\-position}
+\item 
+const int {\bf \-\_\-speed} = 3
+\item 
+string {\bf \-\_\-name}
+\end{DoxyCompactItemize}
+\subsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf off\-\_\-screen} ()
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Defines an abstract, base class for a playable `thing' on the screen which can move around etc. 
+
+Defines class for the general `game' of the cat and mice.
+
+\begin{DoxyAuthor}{Author}
+Alex Cummaudo 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+16 Oct 2013 
+\end{DoxyDate}
+
+
+\subsubsection{Constructor \& Destructor Documentation}
+\index{Animal@{Animal}!Animal@{Animal}}
+\index{Animal@{Animal}!Animal@{Animal}}
+\paragraph[{Animal}]{\setlength{\rightskip}{0pt plus 5cm}Animal\-::\-Animal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_animal_a1e726a49ec952443190ac62dad22353c}
+
+
+Default constructor for initialising \-\_\-position and \-\_\-speed for all new Animals. 
+
+\index{Animal@{Animal}!$\sim$\-Animal@{$\sim$\-Animal}}
+\index{$\sim$\-Animal@{$\sim$\-Animal}!Animal@{Animal}}
+\paragraph[{$\sim$\-Animal}]{\setlength{\rightskip}{0pt plus 5cm}Animal\-::$\sim$\-Animal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_animal_a85ab5e8d0fa7cc6fa5836d4279fac8ea}
+
+
+Destructor reliquishes resources created in this class. 
+
+
+
+\subsubsection{Member Function Documentation}
+\index{Animal@{Animal}!move@{move}}
+\index{move@{move}!Animal@{Animal}}
+\paragraph[{move}]{\setlength{\rightskip}{0pt plus 5cm}void Animal\-::move (
+\begin{DoxyParamCaption}
+\item[{{\bf dirs}}]{dir}
+\end{DoxyParamCaption}
+)}\label{class_animal_af9eb2023be0d8c67b29112a17be11f5d}
+
+
+Move implementation for a \doxyref{Animal}{p.}{class_animal} to move an animal in a direction at its speed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dir} & Direction the animal is told to move in (alters x and y axis position of poisition accordingly) \\
+\hline
+\end{DoxyParams}
+\index{Animal@{Animal}!get\-\_\-position@{get\-\_\-position}}
+\index{get\-\_\-position@{get\-\_\-position}!Animal@{Animal}}
+\paragraph[{get\-\_\-position}]{\setlength{\rightskip}{0pt plus 5cm}point2d$\ast$ const Animal\-::get\-\_\-position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_animal_a9e307e2b46e3732f0797ed4579467244}
+Read property to get the position of the \doxyref{Animal}{p.}{class_animal} \begin{DoxyReturn}{Returns}
+Position of the animal 
+\end{DoxyReturn}
+\index{Animal@{Animal}!set\-\_\-position@{set\-\_\-position}}
+\index{set\-\_\-position@{set\-\_\-position}!Animal@{Animal}}
+\paragraph[{set\-\_\-position}]{\setlength{\rightskip}{0pt plus 5cm}void Animal\-::set\-\_\-position (
+\begin{DoxyParamCaption}
+\item[{point2d $\ast$}]{new\-Pos}
+\end{DoxyParamCaption}
+)}\label{class_animal_aaea75409f44cb02b63b7fbc4a8184197}
+Write property to set the position of the \doxyref{Animal}{p.}{class_animal} 
+\begin{DoxyParams}{Parameters}
+{\em new\-Pos} & New position to set the animal at \\
+\hline
+\end{DoxyParams}
+\index{Animal@{Animal}!get\-\_\-name@{get\-\_\-name}}
+\index{get\-\_\-name@{get\-\_\-name}!Animal@{Animal}}
+\paragraph[{get\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}string const Animal\-::get\-\_\-name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_animal_a6c3b80380c4d16b2f66c69b739dfbf2f}
+Readonly property to get the name of the animal \begin{DoxyReturn}{Returns}
+Name of the animal 
+\end{DoxyReturn}
+\index{Animal@{Animal}!off\-\_\-screen@{off\-\_\-screen}}
+\index{off\-\_\-screen@{off\-\_\-screen}!Animal@{Animal}}
+\paragraph[{off\-\_\-screen}]{\setlength{\rightskip}{0pt plus 5cm}void Animal\-::off\-\_\-screen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_animal_ab17f87c66cc4d47f8fd1219385a1197a}
+
+
+Off screen check that prevents any \doxyref{Animal}{p.}{class_animal} from going outside the borders of the screen. 
+
+
+
+\subsubsection{Member Data Documentation}
+\index{Animal@{Animal}!\-\_\-position@{\-\_\-position}}
+\index{\-\_\-position@{\-\_\-position}!Animal@{Animal}}
+\paragraph[{\-\_\-position}]{\setlength{\rightskip}{0pt plus 5cm}point2d$\ast$ Animal\-::\-\_\-position\hspace{0.3cm}{\ttfamily [protected]}}\label{class_animal_a12bf4eaa06117fd600c2cd1bd0972aac}
+
+
+Centrepoint position of the animal. 
+
+\index{Animal@{Animal}!\-\_\-speed@{\-\_\-speed}}
+\index{\-\_\-speed@{\-\_\-speed}!Animal@{Animal}}
+\paragraph[{\-\_\-speed}]{\setlength{\rightskip}{0pt plus 5cm}const int Animal\-::\-\_\-speed = 3\hspace{0.3cm}{\ttfamily [protected]}}\label{class_animal_aedafd92e6aa3a78449b6a90875e03701}
+
+
+Speed at which animals move at, set to a value of 3. 
+
+\index{Animal@{Animal}!\-\_\-name@{\-\_\-name}}
+\index{\-\_\-name@{\-\_\-name}!Animal@{Animal}}
+\paragraph[{\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}string Animal\-::\-\_\-name\hspace{0.3cm}{\ttfamily [protected]}}\label{class_animal_af1e4f3632becd0325781b5f028d5ff5e}
+
+
+Name of animals, overriden by children (i.\-e. `\-Cat' or `\-Mouse') 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/\-Alex/\-Dropbox/\-Swinburne/\-H\-I\-T2302 -\/ O\-O\-P/\-Projects/\-Cat and Mouse/\#1\-\_\-\-Cat\-Mouse\-\_\-\-C++\-\_\-\-D\-E\-Coupled/src/{\bf Animal.\-h}\item 
+/\-Users/\-Alex/\-Dropbox/\-Swinburne/\-H\-I\-T2302 -\/ O\-O\-P/\-Projects/\-Cat and Mouse/\#1\-\_\-\-Cat\-Mouse\-\_\-\-C++\-\_\-\-D\-E\-Coupled/src/{\bf Animal.\-cpp}\end{DoxyCompactItemize}

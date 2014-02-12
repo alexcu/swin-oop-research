@@ -1,0 +1,129 @@
+\subsection{C\-M\-Network Class Reference}
+\label{interface_c_m_network}\index{C\-M\-Network@{C\-M\-Network}}
+
+
+{\ttfamily \#import $<$C\-M\-Network.\-h$>$}
+
+
+
+Inheritance diagram for C\-M\-Network\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{interface_c_m_network__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\-M\-Network\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{interface_c_m_network__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ {\bf init\-As\-Host\-In\-Game\-:}
+\item 
+(id) -\/ {\bf init\-As\-Client\-With\-I\-P\-Address\-:in\-Game\-:}
+\item 
+(void) -\/ {\bf process\-Messages}
+\item 
+(void) -\/ {\bf send\-Message\-With\-String\-:}
+\end{DoxyCompactItemize}
+\subsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+S\-G\-Connection $\ast$ {\bf \-\_\-ctn}
+\item 
+N\-S\-String $\ast$ {\bf \-\_\-network\-I\-D}
+\item 
+{\bf C\-M\-Game} $\ast$ {\bf \-\_\-game\-Model}
+\end{DoxyCompactItemize}
+\subsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+B\-O\-O\-L {\bf is\-Connected}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Packages up data recieved from the controller and passes it to a given network. 
+
+\begin{DoxyAuthor}{Author}
+Alex Cummaudo 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+22 Oct 2013 
+\end{DoxyDate}
+
+
+\subsubsection{Method Documentation}
+\index{C\-M\-Network@{C\-M\-Network}!init\-As\-Host\-In\-Game\-:@{init\-As\-Host\-In\-Game\-:}}
+\index{init\-As\-Host\-In\-Game\-:@{init\-As\-Host\-In\-Game\-:}!CMNetwork@{C\-M\-Network}}
+\paragraph[{init\-As\-Host\-In\-Game\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-As\-Host\-In\-Game\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf C\-M\-Game} $\ast$)}]{game\-Model}
+\end{DoxyParamCaption}
+}\label{interface_c_m_network_a2b035b8653fcb8c3a6fdc1e1c23a4e2d}
+\index{C\-M\-Network@{C\-M\-Network}!init\-As\-Client\-With\-I\-P\-Address\-:in\-Game\-:@{init\-As\-Client\-With\-I\-P\-Address\-:in\-Game\-:}}
+\index{init\-As\-Client\-With\-I\-P\-Address\-:in\-Game\-:@{init\-As\-Client\-With\-I\-P\-Address\-:in\-Game\-:}!CMNetwork@{C\-M\-Network}}
+\paragraph[{init\-As\-Client\-With\-I\-P\-Address\-:in\-Game\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-As\-Client\-With\-I\-P\-Address\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{ip\-Addr}
+\item[{inGame:({\bf C\-M\-Game} $\ast$)}]{game\-Model}
+\end{DoxyParamCaption}
+}\label{interface_c_m_network_a5594d37d2b50559b4873eef11f6bdac2}
+\index{C\-M\-Network@{C\-M\-Network}!process\-Messages@{process\-Messages}}
+\index{process\-Messages@{process\-Messages}!CMNetwork@{C\-M\-Network}}
+\paragraph[{process\-Messages}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) process\-Messages 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_c_m_network_aa08f5e2e1b9dbcfd21c21d3f1bb0a17a}
+\index{C\-M\-Network@{C\-M\-Network}!send\-Message\-With\-String\-:@{send\-Message\-With\-String\-:}}
+\index{send\-Message\-With\-String\-:@{send\-Message\-With\-String\-:}!CMNetwork@{C\-M\-Network}}
+\paragraph[{send\-Message\-With\-String\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) send\-Message\-With\-String\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{msg}
+\end{DoxyParamCaption}
+}\label{interface_c_m_network_a4db3ee4becf5fa817e2d5d6870c912b4}
+
+
+\subsubsection{Member Data Documentation}
+\index{C\-M\-Network@{C\-M\-Network}!\-\_\-ctn@{\-\_\-ctn}}
+\index{\-\_\-ctn@{\-\_\-ctn}!CMNetwork@{C\-M\-Network}}
+\paragraph[{\-\_\-ctn}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (S\-G\-Connection$\ast$) \-\_\-ctn\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_c_m_network_a0a264da400cb4d9bb8c16cbc66a8908a}
+
+
+Network connection controller between client and host. 
+
+\index{C\-M\-Network@{C\-M\-Network}!\-\_\-network\-I\-D@{\-\_\-network\-I\-D}}
+\index{\-\_\-network\-I\-D@{\-\_\-network\-I\-D}!CMNetwork@{C\-M\-Network}}
+\paragraph[{\-\_\-network\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String$\ast$) \-\_\-network\-I\-D\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_c_m_network_a161ebaba32492602e1c445e76a890e89}
+
+
+Defines a unique address of this machine. 
+
+\index{C\-M\-Network@{C\-M\-Network}!\-\_\-game\-Model@{\-\_\-game\-Model}}
+\index{\-\_\-game\-Model@{\-\_\-game\-Model}!CMNetwork@{C\-M\-Network}}
+\paragraph[{\-\_\-game\-Model}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf C\-M\-Game}$\ast$) \-\_\-game\-Model\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_c_m_network_acfb119fbb30d35949176b2c1d2e7bd35}
+
+
+Defines the coupling between game and network. 
+
+
+
+\subsubsection{Property Documentation}
+\index{C\-M\-Network@{C\-M\-Network}!is\-Connected@{is\-Connected}}
+\index{is\-Connected@{is\-Connected}!CMNetwork@{C\-M\-Network}}
+\paragraph[{is\-Connected}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) is\-Connected\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}\label{interface_c_m_network_a70dba80bb8b16b179d3a79fcc4d62786}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/\-Alex/\-Dropbox/\-Swinburne/\-H\-I\-T2302 -\/ O\-O\-P/\-Projects/\-Cat and Mouse/\#4\-\_\-\-Cat\-Mouse\-\_\-\-Obj\-C\-\_\-\-Coupled/src/{\bf C\-M\-Network.\-h}\end{DoxyCompactItemize}

@@ -1,0 +1,181 @@
+\subsection{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+
+
+{\ttfamily \#include $<$Game.\-h$>$}
+
+
+
+Inheritance diagram for Game\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{class_game__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Game\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Game} (bool as\-Cat)
+\item 
+{\bf $\sim$\-Game} ()
+\item 
+virtual void {\bf process\-\_\-event} ({\bf Event} $\ast$e\-Data)
+\end{DoxyCompactItemize}
+\subsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bf announce\-\_\-event} (string msg)
+\end{DoxyCompactItemize}
+\subsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Animal} $\ast$ {\bf \-\_\-player}
+\item 
+{\bf Animal} $\ast$ {\bf \-\_\-other\-Player}
+\item 
+{\bf Cat} $\ast$ {\bf \-\_\-cat}
+\item 
+{\bf Mouse} $\ast$ {\bf \-\_\-mouse}
+\item 
+timer {\bf \-\_\-game\-Timer}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Defines class for the general `game' of the cat and mice. 
+
+\begin{DoxyAuthor}{Author}
+Alex Cummaudo 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+16 Oct 2013 
+\end{DoxyDate}
+
+
+\subsubsection{Constructor \& Destructor Documentation}
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\paragraph[{Game}]{\setlength{\rightskip}{0pt plus 5cm}Game\-::\-Game (
+\begin{DoxyParamCaption}
+\item[{bool}]{as\-Cat}
+\end{DoxyParamCaption}
+)}\label{class_game_a2605d0d30be2fa6a5c7cad7565aaeabe}
+
+
+On construction of a game, a cat and a mouse will be created---if the as\-Cat is true, player references the cat, else it will reference the mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em as\-Cat} & Where true, the game initialises the player as the cat, with the other player as the mouse. \\
+\hline
+\end{DoxyParams}
+\index{Game@{Game}!$\sim$\-Game@{$\sim$\-Game}}
+\index{$\sim$\-Game@{$\sim$\-Game}!Game@{Game}}
+\paragraph[{$\sim$\-Game}]{\setlength{\rightskip}{0pt plus 5cm}Game\-::$\sim$\-Game (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_game_ae3d112ca6e0e55150d2fdbc704474530}
+
+
+Destructor reliquishes resources created in this class. 
+
+
+
+\subsubsection{Member Function Documentation}
+\index{Game@{Game}!process\-\_\-event@{process\-\_\-event}}
+\index{process\-\_\-event@{process\-\_\-event}!Game@{Game}}
+\paragraph[{process\-\_\-event}]{\setlength{\rightskip}{0pt plus 5cm}void Game\-::process\-\_\-event (
+\begin{DoxyParamCaption}
+\item[{{\bf Event} $\ast$}]{e\-Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_game_a2651e0c33b4e247719d81cba4bc9e6d8}
+
+
+Recieves events from the \doxyref{Event\-Manager}{p.}{class_event_manager} to set the coordinates of the players to either a specified location (\-\_\-other\-Player) or to move the \-\_\-player according to key events. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e\-Data} & \doxyref{Event}{p.}{class_event} Data to process \\
+\hline
+\end{DoxyParams}
+
+
+Implements {\bf Event\-Processor} \doxyref{}{p.}{class_event_processor_a20ce019a16fcf8ba67b6547750bf6655}.
+
+\index{Game@{Game}!announce\-\_\-event@{announce\-\_\-event}}
+\index{announce\-\_\-event@{announce\-\_\-event}!Game@{Game}}
+\paragraph[{announce\-\_\-event}]{\setlength{\rightskip}{0pt plus 5cm}void Game\-::announce\-\_\-event (
+\begin{DoxyParamCaption}
+\item[{string}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}\label{class_game_a86e4977f847093fa5d01089bd748beec}
+
+
+Announces that the player moved (called by key\-\_\-check on a key move) to all of \doxyref{Event\-Manager}{p.}{class_event_manager}'s Event\-Processors---i.\-e. to announce updates of the model. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & Message to announce \\
+\hline
+\end{DoxyParams}
+
+
+Implements {\bf Event\-Announcer} \doxyref{}{p.}{class_event_announcer_a44cb9090f6a15571de9a2f605cd4d898}.
+
+
+
+\subsubsection{Member Data Documentation}
+\index{Game@{Game}!\-\_\-player@{\-\_\-player}}
+\index{\-\_\-player@{\-\_\-player}!Game@{Game}}
+\paragraph[{\-\_\-player}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Animal}$\ast$ Game\-::\-\_\-player\hspace{0.3cm}{\ttfamily [private]}}\label{class_game_a33cf560b060565842b8127a9867d64d5}
+
+
+Player of the game (person controlling the game) 
+
+\index{Game@{Game}!\-\_\-other\-Player@{\-\_\-other\-Player}}
+\index{\-\_\-other\-Player@{\-\_\-other\-Player}!Game@{Game}}
+\paragraph[{\-\_\-other\-Player}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Animal}$\ast$ Game\-::\-\_\-other\-Player\hspace{0.3cm}{\ttfamily [private]}}\label{class_game_a5131619bab9ae76ee9289d2fdcd9a14c}
+
+
+Other player in the game (other person controlling enemy) 
+
+\index{Game@{Game}!\-\_\-cat@{\-\_\-cat}}
+\index{\-\_\-cat@{\-\_\-cat}!Game@{Game}}
+\paragraph[{\-\_\-cat}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cat}$\ast$ Game\-::\-\_\-cat\hspace{0.3cm}{\ttfamily [private]}}\label{class_game_a433c454efcf31e54d98a2aa81d4f6801}
+
+
+\doxyref{Cat}{p.}{class_cat} (chaser) of the game. 
+
+\index{Game@{Game}!\-\_\-mouse@{\-\_\-mouse}}
+\index{\-\_\-mouse@{\-\_\-mouse}!Game@{Game}}
+\paragraph[{\-\_\-mouse}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mouse}$\ast$ Game\-::\-\_\-mouse\hspace{0.3cm}{\ttfamily [private]}}\label{class_game_a8e51ead264380e60e29db6bf1d239f36}
+
+
+\doxyref{Mouse}{p.}{class_mouse} (chasee) of the game. 
+
+\index{Game@{Game}!\-\_\-game\-Timer@{\-\_\-game\-Timer}}
+\index{\-\_\-game\-Timer@{\-\_\-game\-Timer}!Game@{Game}}
+\paragraph[{\-\_\-game\-Timer}]{\setlength{\rightskip}{0pt plus 5cm}timer Game\-::\-\_\-game\-Timer\hspace{0.3cm}{\ttfamily [private]}}\label{class_game_a1e8cb33307304fe85e3efaa7d27132c0}
+
+
+Ingame-\/timer to keep track of how long game has gone for. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/\-Alex/\-Dropbox/\-Swinburne/\-H\-I\-T2302 -\/ O\-O\-P/\-Projects/\-Cat and Mouse/\#1\-\_\-\-Cat\-Mouse\-\_\-\-C++\-\_\-\-D\-E\-Coupled/src/{\bf Game.\-h}\item 
+/\-Users/\-Alex/\-Dropbox/\-Swinburne/\-H\-I\-T2302 -\/ O\-O\-P/\-Projects/\-Cat and Mouse/\#1\-\_\-\-Cat\-Mouse\-\_\-\-C++\-\_\-\-D\-E\-Coupled/src/{\bf Game.\-cpp}\end{DoxyCompactItemize}

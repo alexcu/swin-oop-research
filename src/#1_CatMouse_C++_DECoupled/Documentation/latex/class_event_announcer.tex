@@ -1,0 +1,74 @@
+\subsection{Event\-Announcer Interface Reference}
+\label{class_event_announcer}\index{Event\-Announcer@{Event\-Announcer}}
+
+
+{\ttfamily \#include $<$Event\-Announcer.\-h$>$}
+
+
+
+Inheritance diagram for Event\-Announcer\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_event_announcer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Event\-Announcer\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{class_event_announcer__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bf announce\-\_\-event} (string msg)=0
+\end{DoxyCompactItemize}
+\subsubsection*{Additional Inherited Members}
+
+
+\subsubsection{Detailed Description}
+An pure abstract class that defines all the methods that each announcer of events must implement. 
+
+\begin{DoxyAuthor}{Author}
+Alex Cummaudo 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7 Oct 2013 
+\end{DoxyDate}
+\begin{DoxyNote}{Note}
+Inherits as virtual so that any users of B\-O\-T\-H Event\-Processors and Event\-Subscribers will avoid diamond inheritance issues. 
+\end{DoxyNote}
+
+
+\subsubsection{Member Function Documentation}
+\index{Event\-Announcer@{Event\-Announcer}!announce\-\_\-event@{announce\-\_\-event}}
+\index{announce\-\_\-event@{announce\-\_\-event}!EventAnnouncer@{Event\-Announcer}}
+\paragraph[{announce\-\_\-event}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Event\-Announcer\-::announce\-\_\-event (
+\begin{DoxyParamCaption}
+\item[{string}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}\label{class_event_announcer_a44cb9090f6a15571de9a2f605cd4d898}
+
+
+Defines that whoever uses this interface must announce events with given a message to the \doxyref{Event\-Manager}{p.}{class_event_manager}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & Message to announce when creating an \doxyref{Event}{p.}{class_event} \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in {\bf Network} \doxyref{}{p.}{class_network_aa9fa251f3d9901702987a50dd681e4cc}, {\bf Game} \doxyref{}{p.}{class_game_a86e4977f847093fa5d01089bd748beec}, and {\bf Keyboard} \doxyref{}{p.}{class_keyboard_a95fb72c2a1fc6085f8f76b01e95b97ac}.
+
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/\-Alex/\-Dropbox/\-Swinburne/\-H\-I\-T2302 -\/ O\-O\-P/\-Projects/\-Cat and Mouse/\#1\-\_\-\-Cat\-Mouse\-\_\-\-C++\-\_\-\-D\-E\-Coupled/src/{\bf Event\-Announcer.\-h}\end{DoxyCompactItemize}

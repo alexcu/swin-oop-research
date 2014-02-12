@@ -1,0 +1,157 @@
+\subsection{C\-M\-Animal Class Reference}
+\label{interface_c_m_animal}\index{C\-M\-Animal@{C\-M\-Animal}}
+
+
+{\ttfamily \#import $<$C\-M\-Animal.\-h$>$}
+
+
+
+Inheritance diagram for C\-M\-Animal\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{interface_c_m_animal__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\-M\-Animal\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{interface_c_m_animal__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ {\bf move\-:}
+\item 
+(id) -\/ {\bf init}{\ttfamily  [implementation]}
+\item 
+(void) -\/ {\bf check\-Off\-Screen}{\ttfamily  [implementation]}
+\end{DoxyCompactItemize}
+\subsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+S\-G\-Point2\-D $\ast$ {\bf \-\_\-position}
+\item 
+int {\bf \-\_\-speed}
+\item 
+N\-S\-String $\ast$ {\bf \-\_\-name}
+\end{DoxyCompactItemize}
+\subsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+S\-G\-Point2\-D $\ast$ {\bf position}
+\item 
+N\-S\-String $\ast$ {\bf name}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Defines an abstract, base class for a playable `thing' on the screen which can move around etc. 
+
+\begin{DoxyAuthor}{Author}
+Alex Cummaudo 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+23 Oct 2013 
+\end{DoxyDate}
+
+
+\subsubsection{Method Documentation}
+\index{C\-M\-Animal@{C\-M\-Animal}!move\-:@{move\-:}}
+\index{move\-:@{move\-:}!CMAnimal@{C\-M\-Animal}}
+\paragraph[{move\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) move\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf dirs})}]{dir}
+\end{DoxyParamCaption}
+}\label{interface_c_m_animal_a0fa1cbfa194386482d87a3b817a5de7a}
+
+
+Move implementation for a Animal to move an animal in a direction at its speed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dir} & Direction the animal is told to move in (alters x and y axis position of poisition accordingly) \\
+\hline
+\end{DoxyParams}
+\index{C\-M\-Animal@{C\-M\-Animal}!init@{init}}
+\index{init@{init}!CMAnimal@{C\-M\-Animal}}
+\paragraph[{init}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [implementation]}}\label{interface_c_m_animal_a0c0294aa9117b8f382ccdd101725452c}
+
+
+Default constructor for initialising \-\_\-position and \-\_\-speed for all new Animals. 
+
+\begin{DoxyReturn}{Returns}
+The self class pointer 
+\end{DoxyReturn}
+
+
+Reimplemented in {\bf C\-M\-Cat} \doxyref{}{p.}{interface_c_m_cat_a41400907a9f8aab9e36d9320f5a4db4b}.
+
+\index{C\-M\-Animal@{C\-M\-Animal}!check\-Off\-Screen@{check\-Off\-Screen}}
+\index{check\-Off\-Screen@{check\-Off\-Screen}!CMAnimal@{C\-M\-Animal}}
+\paragraph[{check\-Off\-Screen}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) check\-Off\-Screen 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [implementation]}}\label{interface_c_m_animal_af0f2f628a396447ba8854a07d24aedc1}
+
+
+Off screen check that prevents any Animal from going outside the borders of the screen. 
+
+
+
+\subsubsection{Member Data Documentation}
+\index{C\-M\-Animal@{C\-M\-Animal}!\-\_\-position@{\-\_\-position}}
+\index{\-\_\-position@{\-\_\-position}!CMAnimal@{C\-M\-Animal}}
+\paragraph[{\-\_\-position}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (S\-G\-Point2\-D$\ast$) \-\_\-position\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_c_m_animal_ac54a37cee5d990bfdd897a29933f4c95}
+
+
+Centrepoint position of the animal. 
+
+\index{C\-M\-Animal@{C\-M\-Animal}!\-\_\-speed@{\-\_\-speed}}
+\index{\-\_\-speed@{\-\_\-speed}!CMAnimal@{C\-M\-Animal}}
+\paragraph[{\-\_\-speed}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) \-\_\-speed\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_c_m_animal_ad576084bf3f71ae6cb2d7429c2ab122d}
+
+
+Speed at which animals move at, set to a value of 3. 
+
+\index{C\-M\-Animal@{C\-M\-Animal}!\-\_\-name@{\-\_\-name}}
+\index{\-\_\-name@{\-\_\-name}!CMAnimal@{C\-M\-Animal}}
+\paragraph[{\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String$\ast$) \-\_\-name\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_c_m_animal_a7400051992ecd79e8d4bc9cd6d5c4e22}
+
+
+Name of animals, overriden by children (i.\-e. `\-Cat' or `\-Mouse') 
+
+
+
+\subsubsection{Property Documentation}
+\index{C\-M\-Animal@{C\-M\-Animal}!position@{position}}
+\index{position@{position}!CMAnimal@{C\-M\-Animal}}
+\paragraph[{position}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (S\-G\-Point2\-D$\ast$) position\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [retain]}}\label{interface_c_m_animal_a200958e5c164ccc76005cd3f6fcfc4de}
+
+
+Readwrite property to update position, used by \doxyref{C\-M\-Game}{p.}{class_c_m_game}. 
+
+\index{C\-M\-Animal@{C\-M\-Animal}!name@{name}}
+\index{name@{name}!CMAnimal@{C\-M\-Animal}}
+\paragraph[{name}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String$\ast$) name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}\label{interface_c_m_animal_ae04188fae2d235f67ef40a46181737c8}
+
+
+Readonly property to name, used by \doxyref{C\-M\-G\-U\-I}{p.}{interface_c_m_g_u_i} and \doxyref{C\-M\-Network}{p.}{interface_c_m_network}. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Users/\-Alex/\-Dropbox/\-Swinburne/\-H\-I\-T2302 -\/ O\-O\-P/\-Projects/\-Cat and Mouse/\#4\-\_\-\-Cat\-Mouse\-\_\-\-Obj\-C\-\_\-\-Coupled/src/{\bf C\-M\-Animal.\-h}\item 
+/\-Users/\-Alex/\-Dropbox/\-Swinburne/\-H\-I\-T2302 -\/ O\-O\-P/\-Projects/\-Cat and Mouse/\#4\-\_\-\-Cat\-Mouse\-\_\-\-Obj\-C\-\_\-\-Coupled/src/{\bf C\-M\-Animal.\-m}\end{DoxyCompactItemize}

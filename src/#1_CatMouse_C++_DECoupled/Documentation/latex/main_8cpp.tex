@@ -1,0 +1,77 @@
+\subsection{/\-Users/\-Alex/\-Dropbox/\-Swinburne/\-H\-I\-T2302 -\/ O\-O\-P/\-Projects/\-Cat and Mouse/\#1\-\_\-\-Cat\-Mouse\-\_\-\-C++\-\_\-\-D\-E\-Coupled/src/main.cpp File Reference}
+\label{main_8cpp}\index{/\-Users/\-Alex/\-Dropbox/\-Swinburne/\-H\-I\-T2302 -\/ O\-O\-P/\-Projects/\-Cat and Mouse/\#1\-\_\-\-Cat\-Mouse\-\_\-\-C++\-\_\-\-D\-E\-Coupled/src/main.\-cpp@{/\-Users/\-Alex/\-Dropbox/\-Swinburne/\-H\-I\-T2302 -\/ O\-O\-P/\-Projects/\-Cat and Mouse/\#1\-\_\-\-Cat\-Mouse\-\_\-\-C++\-\_\-\-D\-E\-Coupled/src/main.\-cpp}}
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}Project\-Info.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Game.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}G\-U\-I.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Log.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Network.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Keyboard.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Event\-Manager.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Event.\-h\char`\"{}}\\*
+Include dependency graph for main.\-cpp\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf announce\-\_\-message} (string msg)
+\item 
+void {\bf setup\-\_\-network} ({\bf Network} $\ast$$\ast$network\-View, {\bf Game} $\ast$$\ast$game\-Model)
+\item 
+int {\bf main} ()
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Function Documentation}
+\index{main.\-cpp@{main.\-cpp}!announce\-\_\-message@{announce\-\_\-message}}
+\index{announce\-\_\-message@{announce\-\_\-message}!main.cpp@{main.\-cpp}}
+\paragraph[{announce\-\_\-message}]{\setlength{\rightskip}{0pt plus 5cm}void announce\-\_\-message (
+\begin{DoxyParamCaption}
+\item[{string}]{msg}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_a8b532daab00c6d1188407577e027a4d2}
+
+
+Allows simple welcome messages to be printed to the console and over network. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & Textual string to announce. \\
+\hline
+\end{DoxyParams}
+\index{main.\-cpp@{main.\-cpp}!setup\-\_\-network@{setup\-\_\-network}}
+\index{setup\-\_\-network@{setup\-\_\-network}!main.cpp@{main.\-cpp}}
+\paragraph[{setup\-\_\-network}]{\setlength{\rightskip}{0pt plus 5cm}void setup\-\_\-network (
+\begin{DoxyParamCaption}
+\item[{{\bf Network} $\ast$$\ast$}]{network\-View, }
+\item[{{\bf Game} $\ast$$\ast$}]{game\-Model}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_a0c969a55cf56f1a231334a015c1cb57a}
+
+
+Sets up the network by asking the user whether they are hosting or connecting to the host--network\-View and game\-Model are passed in by pointer reference to their allocated memory on the heap so that they can be constructed in this function for better functional decomp. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em network\-View} & Reference to the network view created in main \\
+\hline
+{\em game\-Model} & Reference to the game model created in main \\
+\hline
+\end{DoxyParams}
+\index{main.\-cpp@{main.\-cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.\-cpp}}
+\paragraph[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+
+The main entry point to the program. 
+

@@ -1,0 +1,4 @@
+<map id="Animal" name="Animal">
+<area shape="rect" id="node2" href="$class_cat.html" title="Defines an class for a playable chaser (i.e. the chasing cat) " alt="" coords="5,248,67,325"/>
+<area shape="rect" id="node3" href="$class_mouse.html" title="Defines an class for a playable chasee (i.e. the hunted mouse) " alt="" coords="91,248,172,325"/>
+</map>
